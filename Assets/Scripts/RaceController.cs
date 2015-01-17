@@ -40,7 +40,10 @@ public class RaceController : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		raceState = RaceState.PRERACE; 
+
+		raceState = RaceState.PRERACE;
+		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
+		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 	}
 	
 	// Update is called once per frame
@@ -50,5 +53,29 @@ public class RaceController : MonoBehaviour
 		{
 			OnUpdate();
 		}
+		SwitchState();
+	}
+
+	void UpdateLapCount()
+	{
+		if(currentLap < lapsCount && canLap)
+		{
+			currentLap++;
+			canLap = false;
+		}
+		else
+		{
+			//Todo: End race here.
+		}
+	}
+
+	void UpdateLapStatus()
+	{
+		canLap = true;
+	}
+
+	void SwitchState()
+	{
+
 	}
 }
