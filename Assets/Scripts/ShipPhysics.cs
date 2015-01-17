@@ -24,6 +24,7 @@ public class ShipPhysics : MonoBehaviour {
 	public Transform leftThruster;
 	public Transform rightThruster;
 
+	public RSInputAdapter rsInputAdapter;
 
 	float openingSpeedBoost = 100;
 	// Use this for initialization
@@ -36,24 +37,35 @@ public class ShipPhysics : MonoBehaviour {
 		isThrusting = false;
 
 		if (Input.GetKey (KeyCode.LeftArrow)) {
-			Vector3 direction = (leftThruster.position - transform.position);
-			direction = new Vector3(direction.z, 0, direction.x).normalized;
 			rigidbody.AddForceAtPosition(leftThruster.forward * speed, leftThruster.position ,  ForceMode.Acceleration);
 			//rigidbody.AddTorque( (leftThruster.position - transform.position).normalized * 5);
 			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
 
 			isThrusting = true;
 		}
+		else if(rsInputAdapter.leftOutputNormalized > 0)
+		{
+			leftOutput = rsInputAdapter.leftOutputNormalized;
+			rigidbody.AddForceAtPosition(leftThruster.forward * speed, leftThruster.position ,  ForceMode.Acceleration);
+			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+			
+			isThrusting = true;
+		}
 		else
 			leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
 		
 		if (Input.GetKey (KeyCode.RightArrow)) {
-			Vector3 direction = (rightThruster.position - transform.position);
-			direction = new Vector3(direction.x, 0, direction.z).normalized;
 			rigidbody.AddForceAtPosition(rightThruster.forward * speed, rightThruster.position , ForceMode.Acceleration);
-			//rigidbody.AddTorque( (rightThruster.position - transform.position).normalized * 5);
 			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
 
+			isThrusting = true;
+		}
+		else if(rsInputAdapter.leftOutputNormalized > 0)
+		{
+			rightOutput = rsInputAdapter.rightOutputNormalized;		
+			rigidbody.AddForceAtPosition(rightThruster.forward * speed, rightThruster.position , ForceMode.Acceleration);
+			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+			
 			isThrusting = true;
 		}
 		else 
@@ -81,7 +93,7 @@ public class ShipPhysics : MonoBehaviour {
 	IEnumerator CR_WaitForFirstThrust()
 	{
 		while (!isThrusting) {
-			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || rsInputAdapter.leftHand.isTracking || rsInputAdapter.rightHand.isTracking)
 				isThrusting = true;
 
 			yield return 0;	
