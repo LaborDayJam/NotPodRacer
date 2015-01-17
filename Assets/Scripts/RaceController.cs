@@ -13,10 +13,12 @@ public class RaceController : MonoBehaviour
 		FINISHED
 	};
 
-	public RaceState raceState;
+	public static RaceState raceState;
 
 	public delegate void RaceControllerUpdate();
 	public static event RaceControllerUpdate OnUpdate;
+	public static event RaceControllerUpdate Newlap;
+	
 
 	
 
@@ -26,7 +28,7 @@ public class RaceController : MonoBehaviour
 	public int 	lapsCount = 0;
 	public int  currentLap = 0;
 
-	public int GetState
+	public static int GetState
 	{
 		get{return (int)raceState;}
 		set{raceState = (RaceState)value;}
@@ -62,6 +64,9 @@ public class RaceController : MonoBehaviour
 		{
 			currentLap++;
 			canLap = false;
+			
+			if(Newlap != null)
+				Newlap();
 		}
 		else
 		{
