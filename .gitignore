@@ -5,6 +5,8 @@ Library/*
 Build/*
 Assets/SaveData/*
 
+Library/
+
 *.svd
 *.userprefs
 *.db
