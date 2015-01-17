@@ -1,41 +1,15 @@
-# =============== #
-# Unity generated #
-# =============== #
-Temp/
-Obj/
-UnityGenerated/
-Library/
- 
-# ===================================== #
-# Visual Studio / MonoDevelop generated #
-# ===================================== #
-ExportedObj/
+#Note: that ! negates an ignore
+
+Temp/*
+Library/*
+Build/*
+Assets/SaveData/*
+
 *.svd
 *.userprefs
+*.db
+*.unityproj
+*.sln
 *.csproj
 *.pidb
-*.suo
-*.sln
-*.user
-*.unityproj
-*.booproj
-*.DotSettings
- 
-# ============ #
-# OS generated #
-# ============ #
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
-
-# ======= #
-# UnityVS #
-# ======= #
-SyntaxTree*
-UnityVS/
-UnityVS*
+Assets/Thumbs.db.meta
