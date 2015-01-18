@@ -13,8 +13,8 @@ public class ShipPhysics : MonoBehaviour {
 
 	//Thrust Output
 	float MAX_INDIVIDUAL_THRUST = 1;
-	float leftOutput;
-	float rightOutput;
+	public float leftOutput;
+	public float rightOutput;
 
 	float outputDrag = 1.5f;
 	float outputRate = 1f;
@@ -40,15 +40,12 @@ public class ShipPhysics : MonoBehaviour {
 			rigidbody.AddForceAtPosition(leftThruster.forward * speed, leftThruster.position ,  ForceMode.Acceleration);
 			//rigidbody.AddTorque( (leftThruster.position - transform.position).normalized * 5);
 			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-
 			isThrusting = true;
 		}
 		else if(rsInputAdapter.leftOutputNormalized > 0)
 		{
 			leftOutput = rsInputAdapter.leftOutputNormalized;
-			rigidbody.AddForceAtPosition(leftThruster.forward * speed, leftThruster.position ,  ForceMode.Acceleration);
-			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-			
+			rigidbody.AddForceAtPosition(leftThruster.forward * 50, leftThruster.position ,  ForceMode.Acceleration);
 			isThrusting = true;
 		}
 		else
@@ -57,15 +54,12 @@ public class ShipPhysics : MonoBehaviour {
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			rigidbody.AddForceAtPosition(rightThruster.forward * speed, rightThruster.position , ForceMode.Acceleration);
 			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-
 			isThrusting = true;
 		}
 		else if(rsInputAdapter.leftOutputNormalized > 0)
 		{
 			rightOutput = rsInputAdapter.rightOutputNormalized;		
-			rigidbody.AddForceAtPosition(rightThruster.forward * speed, rightThruster.position , ForceMode.Acceleration);
-			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-			
+			rigidbody.AddForceAtPosition(rightThruster.forward * 50, rightThruster.position , ForceMode.Acceleration);
 			isThrusting = true;
 		}
 		else 
@@ -74,7 +68,6 @@ public class ShipPhysics : MonoBehaviour {
 		//Movement
 		if (isThrusting) {
 			speed = Mathf.Clamp(speed + (leftOutput + rightOutput) * .5f * accelerationRate * Time.deltaTime, 0, max_speed);
-	
 		} else {
 			speed = Mathf.Clamp(speed - deccelerationRate * Time.deltaTime, 0, max_speed);
 		}
