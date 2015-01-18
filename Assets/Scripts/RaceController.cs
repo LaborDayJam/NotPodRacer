@@ -65,7 +65,11 @@ public class RaceController : MonoBehaviour
 		
 		if(Input.GetKeyDown(KeyCode.D))
 			raceState = RaceState.COUNTDOWN;
-		
+		else if(Input.GetKeyDown(KeyCode.Escape))
+			Application.Quit();
+		else if(Input.GetKeyDown(KeyCode.R))
+			Application.LoadLevel(Application.loadedLevel);
+
 		if(lastState != raceState)
 		{
 			SwitchState();
