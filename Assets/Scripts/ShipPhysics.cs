@@ -43,7 +43,7 @@ public class ShipPhysics : MonoBehaviour {
 
 			isThrusting = true;
 		}
-		else if(rsInputAdapter.leftOutputNormalized > 0)
+		else if(rsInputAdapter && rsInputAdapter.leftOutputNormalized > 0)
 		{
 			leftOutput = rsInputAdapter.leftOutputNormalized;
 			rigidbody.AddForceAtPosition(leftThruster.forward * speed, leftThruster.position ,  ForceMode.Acceleration);
@@ -60,7 +60,7 @@ public class ShipPhysics : MonoBehaviour {
 
 			isThrusting = true;
 		}
-		else if(rsInputAdapter.leftOutputNormalized > 0)
+		else if(rsInputAdapter && rsInputAdapter.leftOutputNormalized > 0)
 		{
 			rightOutput = rsInputAdapter.rightOutputNormalized;		
 			rigidbody.AddForceAtPosition(rightThruster.forward * speed, rightThruster.position , ForceMode.Acceleration);
@@ -93,8 +93,12 @@ public class ShipPhysics : MonoBehaviour {
 	IEnumerator CR_WaitForFirstThrust()
 	{
 		while (!isThrusting) {
+#if !UNITY_EDITOR_OSX
 			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || rsInputAdapter.leftHand.isTracking || rsInputAdapter.rightHand.isTracking)
-				isThrusting = true;
+#else
+			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+#endif
+					isThrusting = true;
 
 			yield return 0;	
 		}

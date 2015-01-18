@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class RSInputAdapter : MonoBehaviour {
+#if !UNITY_EDITOR_OSX
 	public ThrusterTracker leftHand;
 	public ThrusterTracker rightHand;
+#endif
 
 	public float leftOutputNormalized;
 	public float rightOutputNormalized;
@@ -22,6 +24,7 @@ public class RSInputAdapter : MonoBehaviour {
 	{
 		while(true)
 		{
+#if !UNITY_EDITOR_OSX
 			if(leftHand.isTracking)
 				leftOutputNormalized = (leftHand.maxDepth - leftHand.handDepth)/(leftHand.maxDepth - leftHand.minDepth);
 			else
@@ -31,7 +34,7 @@ public class RSInputAdapter : MonoBehaviour {
 				rightOutputNormalized = (rightHand.maxDepth - rightHand.handDepth)/(rightHand.maxDepth - rightHand.minDepth);
 			else
 				rightOutputNormalized = 0;
-
+#endif
 			yield return 0;
 		}
 
