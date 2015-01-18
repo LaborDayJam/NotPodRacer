@@ -89,7 +89,7 @@ public class ShipPhysics : MonoBehaviour {
 
 	IEnumerator CR_WaitForFirstThrust()
 	{
-		while (!isThrusting) {
+		while (!isThrusting && RaceController.GetState != 2) {
 #if !UNITY_EDITOR_OSX
 			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || rsInputAdapter.leftHand.isTracking || rsInputAdapter.rightHand.isTracking)
 #else

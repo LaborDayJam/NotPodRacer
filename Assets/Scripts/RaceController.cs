@@ -25,7 +25,9 @@ public class RaceController : MonoBehaviour
 	
 	
 	
-	
+	public GameObject rsInputObject;
+	private RSInputAdapter rsInput;
+
 	public bool canLap = true;
 	public int 	lapsCount = 0;
 	public int  currentLap = 0;
@@ -53,6 +55,8 @@ public class RaceController : MonoBehaviour
 		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
+		rsInput = rsInputObject.GetComponent<RSInputAdapter>();
+
 	}
 	
 	// Update is called once per frame
@@ -70,6 +74,9 @@ public class RaceController : MonoBehaviour
 		else if(Input.GetKeyDown(KeyCode.R))
 			Application.LoadLevel(Application.loadedLevel);
 
+		if(raceState == RaceState.PRERACE && rsInput.leftHand.isTracking && rsInput.rightHand.isTracking)
+			raceState = RaceState.COUNTDOWN;
+	
 		if(lastState != raceState)
 		{
 			SwitchState();
@@ -89,7 +96,10 @@ public class RaceController : MonoBehaviour
 		}
 		else
 		{
-			//Todo: End race here.
+			raceState = RaceState.FINISHED;
+			StartCoroutine("EndingRacing");
+
+			/// AUDIO CREDIT CURT VICKTOR BRYANT
 		}
 	}
 
@@ -111,7 +121,11 @@ public class RaceController : MonoBehaviour
 			
 		}
 	}
-	
+	IEnumerator EndRace()
+	{
+		yield return new WaitForSeconds(3);
+		Application.LoadLevel(0);
+	}
 	IEnumerator StartRace()
 	{
 		if(!raceStart)
