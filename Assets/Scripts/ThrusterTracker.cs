@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+﻿
+#if !UNITY_EDITOR_OSX
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+
 using RSUnityToolkit;
 
 public class ThrusterTracker : VirtualWorldBoxAction {
@@ -448,3 +451,6 @@ public class ThrusterTracker : VirtualWorldBoxAction {
 	#endregion
 	
 }
+
+
+#endif
