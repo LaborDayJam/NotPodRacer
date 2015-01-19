@@ -5,7 +5,9 @@ Jump into a jetpod and speed your way through the lap to achieve the best time!
 
 ##Controls
 Keyboard
+
 Move Left - A, Left Arrow, Left Mouse Button
+
 Move Right - D, Right Arrow, Right Mouse button
 
 ##Play Now
