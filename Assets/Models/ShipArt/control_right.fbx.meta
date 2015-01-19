@@ -39,6 +39,7 @@ ModelImporter:
     4300006: handle1
     7400000: rightControl
     9500000: //RootNode
+    11100000: //RootNode
     13700000: railmesh
   materials:
     importMaterials: 1
@@ -141,6 +142,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 

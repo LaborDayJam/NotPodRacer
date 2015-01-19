@@ -33,13 +33,33 @@ public class ShipPhysics : MonoBehaviour {
 	public float turnFactor = 300;
 
 	Vector3 targetHeightPosition;
+		
+	public Animation leftHand;
+	public Animation rightHand;
 
+	AnimationClip clip;
 	// Use this for initialization
 	void Start () {
 		targetHeightPosition = transform.position;
 		StartCoroutine (CR_WaitForFirstThrust ());
 	}
-	
+
+	void UpdateHandAnimation(Animation hand, float output)
+	{
+		AnimationState targetAnim;
+		string animName;
+		if (hand == leftHand) {
+			animName = "leftControl";
+			targetAnim = leftHand [animName];
+		} else {
+			animName = "rightControl";
+			targetAnim = rightHand [animName];
+		}
+		targetAnim.time = output ;
+		targetAnim.speed = 0;
+		hand.Play (animName);
+	}
+
 	// Update is called once per frame
 	void HandleUpdate () {
 		isThrusting = false;
@@ -52,6 +72,7 @@ public class ShipPhysics : MonoBehaviour {
 		{
 			leftOutput = rsInputAdapter.leftOutputNormalized;
 			isThrusting = true;
+
 		}
 		else
 			leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
@@ -64,10 +85,15 @@ public class ShipPhysics : MonoBehaviour {
 		{
 			rightOutput = rsInputAdapter.rightOutputNormalized;		
 			isThrusting = true;
+
 		}
 		else 
 			rightOutput = Mathf.Clamp(rightOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+		//Debug.Log (leftHand.animation.name);
+		//
 
+		UpdateHandAnimation(leftHand, leftOutput);
+		UpdateHandAnimation(rightHand, rightOutput);
 		//Turning
 		if( ( leftOutput - rightOutput ) != 0)
 			rigidbody.AddRelativeTorque(0, ( leftOutput - rightOutput ) * turnFactor, 0);
@@ -77,6 +103,7 @@ public class ShipPhysics : MonoBehaviour {
 			float acceleration = (leftOutput + rightOutput) * .5f * accelerationRate * Time.deltaTime;
 			rigidbody.velocity += transform.forward * (acceleration );
 		} 
+	
 	}
 
 	IEnumerator CR_UpdateLoop()
