@@ -1,0 +1,1596 @@
+fileFormatVersion: 2
+guid: 2566377b5a71d424f849511595cafa1f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TF_Scout_RigV02:Bag_GEO
+    100004: TF_Scout_RigV02:Bag_Prop_group
+    100006: TF_Scout_RigV02:Ball_L_Pivot
+    100008: TF_Scout_RigV02:Ball_R_Pivot
+    100010: TF_Scout_RigV02:Bank_L_Left
+    100012: TF_Scout_RigV02:Bank_L_Right
+    100014: TF_Scout_RigV02:Bank_R_Left
+    100016: TF_Scout_RigV02:Bank_R_Right
+    100018: TF_Scout_RigV02:Bat_Joint_group
+    100020: TF_Scout_RigV02:be_Head_nub
+    100022: TF_Scout_RigV02:be_Jaw_nub
+    100024: TF_Scout_RigV02:be_L_Index_04
+    100026: TF_Scout_RigV02:be_L_Mid_04
+    100028: TF_Scout_RigV02:be_L_Pinky_04
+    100030: TF_Scout_RigV02:be_L_Ring_04
+    100032: TF_Scout_RigV02:be_L_Thumb_04
+    100034: TF_Scout_RigV02:be_L_Toe
+    100036: TF_Scout_RigV02:be_L_Toe 1
+    100038: TF_Scout_RigV02:be_L_Toe 2
+    100040: TF_Scout_RigV02:be_R_Index_04
+    100042: TF_Scout_RigV02:be_R_Mid_04
+    100044: TF_Scout_RigV02:be_R_Pinky_04
+    100046: TF_Scout_RigV02:be_R_Ring_04
+    100048: TF_Scout_RigV02:be_R_Thumb_04
+    100050: TF_Scout_RigV02:be_R_Toe
+    100052: TF_Scout_RigV02:be_R_Toe 1
+    100054: TF_Scout_RigV02:be_R_Toe 2
+    100056: TF_Scout_RigV02:bn_L_Ankle
+    100058: TF_Scout_RigV02:bn_L_Ball
+    100060: TF_Scout_RigV02:bn_L_Clavicle
+    100062: TF_Scout_RigV02:bn_L_Elbow
+    100064: TF_Scout_RigV02:bn_L_Forearm
+    100066: TF_Scout_RigV02:bn_L_Hip
+    100068: TF_Scout_RigV02:bn_L_Index_01
+    100070: TF_Scout_RigV02:bn_L_Index_02
+    100072: TF_Scout_RigV02:bn_L_Index_03
+    100074: TF_Scout_RigV02:bn_L_Knee
+    100076: TF_Scout_RigV02:bn_L_Mid_01
+    100078: TF_Scout_RigV02:bn_L_Mid_02
+    100080: TF_Scout_RigV02:bn_L_Mid_03
+    100082: TF_Scout_RigV02:bn_L_Pinky_00
+    100084: TF_Scout_RigV02:bn_L_Pinky_01
+    100086: TF_Scout_RigV02:bn_L_Pinky_02
+    100088: TF_Scout_RigV02:bn_L_Pinky_03
+    100090: TF_Scout_RigV02:bn_L_Ring_01
+    100092: TF_Scout_RigV02:bn_L_Ring_02
+    100094: TF_Scout_RigV02:bn_L_Ring_03
+    100096: TF_Scout_RigV02:bn_L_Shoulder
+    100098: TF_Scout_RigV02:bn_L_Thumb_00
+    100100: TF_Scout_RigV02:bn_L_Thumb_01
+    100102: TF_Scout_RigV02:bn_L_Thumb_02
+    100104: TF_Scout_RigV02:bn_L_Thumb_03
+    100106: TF_Scout_RigV02:bn_L_Wrist
+    100108: TF_Scout_RigV02:bn_R_Ankle
+    100110: TF_Scout_RigV02:bn_R_Ball
+    100112: TF_Scout_RigV02:bn_R_Clavicle
+    100114: TF_Scout_RigV02:bn_R_Elbow
+    100116: TF_Scout_RigV02:bn_R_Forearm
+    100118: TF_Scout_RigV02:bn_R_Hip
+    100120: TF_Scout_RigV02:bn_R_Index_01
+    100122: TF_Scout_RigV02:bn_R_Index_02
+    100124: TF_Scout_RigV02:bn_R_Index_03
+    100126: TF_Scout_RigV02:bn_R_Knee
+    100128: TF_Scout_RigV02:bn_R_Mid_01
+    100130: TF_Scout_RigV02:bn_R_Mid_02
+    100132: TF_Scout_RigV02:bn_R_Mid_03
+    100134: TF_Scout_RigV02:bn_R_Pinky_00
+    100136: TF_Scout_RigV02:bn_R_Pinky_01
+    100138: TF_Scout_RigV02:bn_R_Pinky_02
+    100140: TF_Scout_RigV02:bn_R_Pinky_03
+    100142: TF_Scout_RigV02:bn_R_Ring_01
+    100144: TF_Scout_RigV02:bn_R_Ring_02
+    100146: TF_Scout_RigV02:bn_R_Ring_03
+    100148: TF_Scout_RigV02:bn_R_Shoulder
+    100150: TF_Scout_RigV02:bn_R_Thumb_00
+    100152: TF_Scout_RigV02:bn_R_Thumb_01
+    100154: TF_Scout_RigV02:bn_R_Thumb_02
+    100156: TF_Scout_RigV02:bn_R_Thumb_03
+    100158: TF_Scout_RigV02:bn_R_Wrist
+    100160: TF_Scout_RigV02:bn_Spine_01
+    100162: TF_Scout_RigV02:bn_Spine_02
+    100164: TF_Scout_RigV02:bn_Spine_03
+    100166: TF_Scout_RigV02:bn_Spine_04
+    100168: TF_Scout_RigV02:bn_Spine_05
+    100170: TF_Scout_RigV02:bn_Spine_06
+    100172: TF_Scout_RigV02:Body_geo
+    100174: TF_Scout_RigV02:BS_group
+    100176: TF_Scout_RigV02:BS_Master
+    100178: TF_Scout_RigV02:Cntrl_Arms_group
+    100180: TF_Scout_RigV02:Cntrl_Bag
+    100182: TF_Scout_RigV02:Cntrl_Bag_group
+    100184: TF_Scout_RigV02:Cntrl_Bat_group
+    100186: TF_Scout_RigV02:Cntrl_Brow
+    100188: TF_Scout_RigV02:Cntrl_COG
+    100190: TF_Scout_RigV02:Cntrl_COG_group
+    100192: TF_Scout_RigV02:Cntrl_Eyes
+    100194: TF_Scout_RigV02:Cntrl_Eyes_group
+    100196: TF_Scout_RigV02:Cntrl_group
+    100198: TF_Scout_RigV02:Cntrl_Hat
+    100200: TF_Scout_RigV02:Cntrl_Hat_group
+    100202: TF_Scout_RigV02:Cntrl_Head
+    100204: TF_Scout_RigV02:Cntrl_Head_group
+    100206: TF_Scout_RigV02:Cntrl_Headphone
+    100208: TF_Scout_RigV02:Cntrl_Headphone_group
+    100210: TF_Scout_RigV02:Cntrl_Hips
+    100212: TF_Scout_RigV02:Cntrl_Hips_group
+    100214: TF_Scout_RigV02:Cntrl_IK_L_Arm_group
+    100216: TF_Scout_RigV02:Cntrl_IK_R_Arm_group
+    100218: TF_Scout_RigV02:Cntrl_Jaw
+    100220: TF_Scout_RigV02:Cntrl_L_Blink
+    100222: TF_Scout_RigV02:Cntrl_L_Brow_In
+    100224: TF_Scout_RigV02:Cntrl_L_Brow_Mid
+    100226: TF_Scout_RigV02:Cntrl_L_Brow_Out
+    100228: TF_Scout_RigV02:Cntrl_L_Clavicle
+    100230: TF_Scout_RigV02:Cntrl_L_Clavicle_group
+    100232: TF_Scout_RigV02:Cntrl_L_Clavicle_group_group
+    100234: TF_Scout_RigV02:Cntrl_L_Cnr_Mouth
+    100236: TF_Scout_RigV02:Cntrl_L_Eye
+    100238: TF_Scout_RigV02:Cntrl_L_Fingers
+    100240: TF_Scout_RigV02:Cntrl_L_FK_Ankle
+    100242: TF_Scout_RigV02:Cntrl_L_FK_Ankle_group
+    100244: TF_Scout_RigV02:Cntrl_L_FK_Arm_group
+    100246: TF_Scout_RigV02:Cntrl_L_FK_Ball
+    100248: TF_Scout_RigV02:Cntrl_L_FK_Ball_group
+    100250: TF_Scout_RigV02:Cntrl_L_FK_Elbow
+    100252: TF_Scout_RigV02:Cntrl_L_FK_Elbow_group
+    100254: TF_Scout_RigV02:Cntrl_L_FK_Knee
+    100256: TF_Scout_RigV02:Cntrl_L_FK_Knee_group
+    100258: TF_Scout_RigV02:Cntrl_L_FK_Leg
+    100260: TF_Scout_RigV02:Cntrl_L_FK_Leg_group
+    100262: TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group
+    100264: TF_Scout_RigV02:Cntrl_L_FK_Shoulder
+    100266: TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group
+    100268: TF_Scout_RigV02:Cntrl_L_FK_Wrist
+    100270: TF_Scout_RigV02:Cntrl_L_FK_Wrist_group
+    100272: TF_Scout_RigV02:Cntrl_L_Foot
+    100274: TF_Scout_RigV02:Cntrl_L_Foot_group
+    100276: TF_Scout_RigV02:Cntrl_L_Foot_Space_group
+    100278: TF_Scout_RigV02:Cntrl_L_Foot_Switch
+    100280: TF_Scout_RigV02:Cntrl_L_Foot_Switch_group
+    100282: TF_Scout_RigV02:Cntrl_L_Hand_group
+    100284: TF_Scout_RigV02:Cntrl_L_Hand_Space_group
+    100286: TF_Scout_RigV02:Cntrl_L_IK_Hand
+    100288: TF_Scout_RigV02:Cntrl_L_IK_Hand_group
+    100290: TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group
+    100292: TF_Scout_RigV02:Cntrl_L_Lwr_Lip
+    100294: TF_Scout_RigV02:Cntrl_L_Pinky
+    100296: TF_Scout_RigV02:Cntrl_L_Pinky_group
+    100298: TF_Scout_RigV02:Cntrl_L_PV_Arm
+    100300: TF_Scout_RigV02:Cntrl_L_PV_Leg
+    100302: TF_Scout_RigV02:Cntrl_L_PV_Leg_group
+    100304: TF_Scout_RigV02:Cntrl_L_Sneer
+    100306: TF_Scout_RigV02:Cntrl_L_Switch
+    100308: TF_Scout_RigV02:Cntrl_L_Thumb
+    100310: TF_Scout_RigV02:Cntrl_L_Thumb_group
+    100312: TF_Scout_RigV02:Cntrl_L_Upr_Lip
+    100314: TF_Scout_RigV02:Cntrl_Legs_group
+    100316: TF_Scout_RigV02:Cntrl_Lwr_Lip
+    100318: TF_Scout_RigV02:Cntrl_Mouthpeice
+    100320: TF_Scout_RigV02:Cntrl_Mouthpeice_group
+    100322: TF_Scout_RigV02:Cntrl_Neck
+    100324: TF_Scout_RigV02:Cntrl_Neck_group
+    100326: TF_Scout_RigV02:Cntrl_Nose
+    100328: TF_Scout_RigV02:Cntrl_Parent_Bat_group
+    100330: TF_Scout_RigV02:Cntrl_R_Blink
+    100332: TF_Scout_RigV02:Cntrl_R_Brow_In
+    100334: TF_Scout_RigV02:Cntrl_R_Brow_Mid
+    100336: TF_Scout_RigV02:Cntrl_R_Brow_Out
+    100338: TF_Scout_RigV02:Cntrl_R_Clavicle
+    100340: TF_Scout_RigV02:Cntrl_R_Clavicle_group
+    100342: TF_Scout_RigV02:Cntrl_R_Clavicle_group_group
+    100344: TF_Scout_RigV02:Cntrl_R_Cnr_Mouth
+    100346: TF_Scout_RigV02:Cntrl_R_Eye
+    100348: TF_Scout_RigV02:Cntrl_R_Fingers
+    100350: TF_Scout_RigV02:Cntrl_R_FK_Ankle
+    100352: TF_Scout_RigV02:Cntrl_R_FK_Ankle_group
+    100354: TF_Scout_RigV02:Cntrl_R_FK_Arm_group
+    100356: TF_Scout_RigV02:Cntrl_R_FK_Ball
+    100358: TF_Scout_RigV02:Cntrl_R_FK_Ball_group
+    100360: TF_Scout_RigV02:Cntrl_R_FK_Elbow
+    100362: TF_Scout_RigV02:Cntrl_R_FK_Elbow_group
+    100364: TF_Scout_RigV02:Cntrl_R_FK_Knee
+    100366: TF_Scout_RigV02:Cntrl_R_FK_Knee_group
+    100368: TF_Scout_RigV02:Cntrl_R_FK_Leg
+    100370: TF_Scout_RigV02:Cntrl_R_FK_Leg_group
+    100372: TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group
+    100374: TF_Scout_RigV02:Cntrl_R_FK_Shoulder
+    100376: TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group
+    100378: TF_Scout_RigV02:Cntrl_R_FK_Wrist
+    100380: TF_Scout_RigV02:Cntrl_R_FK_Wrist_group
+    100382: TF_Scout_RigV02:Cntrl_R_Foot
+    100384: TF_Scout_RigV02:Cntrl_R_Foot_group
+    100386: TF_Scout_RigV02:Cntrl_R_Foot_Space_group
+    100388: TF_Scout_RigV02:Cntrl_R_Foot_Switch
+    100390: TF_Scout_RigV02:Cntrl_R_Foot_Switch 1
+    100392: TF_Scout_RigV02:Cntrl_R_Foot_Switch_group
+    100394: TF_Scout_RigV02:Cntrl_R_Hand_group
+    100396: TF_Scout_RigV02:Cntrl_R_Hand_Space_group
+    100398: TF_Scout_RigV02:Cntrl_R_IK_Hand
+    100400: TF_Scout_RigV02:Cntrl_R_IK_Hand_group
+    100402: TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group
+    100404: TF_Scout_RigV02:Cntrl_R_Lwr_Lip
+    100406: TF_Scout_RigV02:Cntrl_R_Pinky
+    100408: TF_Scout_RigV02:Cntrl_R_Pinky_group
+    100410: TF_Scout_RigV02:Cntrl_R_PV_Arm
+    100412: TF_Scout_RigV02:Cntrl_R_PV_Leg
+    100414: TF_Scout_RigV02:Cntrl_R_PV_Leg_group
+    100416: TF_Scout_RigV02:Cntrl_R_Sneer
+    100418: TF_Scout_RigV02:Cntrl_R_Switch
+    100420: TF_Scout_RigV02:Cntrl_R_Thumb
+    100422: TF_Scout_RigV02:Cntrl_R_Thumb_group
+    100424: TF_Scout_RigV02:Cntrl_R_Upr_Lip
+    100426: TF_Scout_RigV02:Cntrl_Shoulders
+    100428: TF_Scout_RigV02:Cntrl_Shoulders_group
+    100430: TF_Scout_RigV02:Cntrl_Spine01_group
+    100432: TF_Scout_RigV02:Cntrl_Spine02_group
+    100434: TF_Scout_RigV02:Cntrl_Spine_01
+    100436: TF_Scout_RigV02:Cntrl_Spine_03
+    100438: TF_Scout_RigV02:Cntrl_Tongue_01
+    100440: TF_Scout_RigV02:Cntrl_Tongue_01_group
+    100442: TF_Scout_RigV02:Cntrl_Tongue_02
+    100444: TF_Scout_RigV02:Cntrl_Tongue_02_group
+    100446: TF_Scout_RigV02:Cntrl_Upr_Lip
+    100448: TF_Scout_RigV02:Cntrl_Zero
+    100450: TF_Scout_RigV02:Cntrl_Zero_group
+    100452: TF_Scout_RigV02:curve_spine
+    100454: TF_Scout_RigV02:DO_NOT_TOUCH
+    100456: TF_Scout_RigV02:Dog_Tags_GEO
+    100458: TF_Scout_RigV02:Facial_UI
+    100460: TF_Scout_RigV02:Facial_UI_group
+    100462: TF_Scout_RigV02:fbn_Head_01
+    100464: TF_Scout_RigV02:fbn_Jaw_01
+    100466: TF_Scout_RigV02:fbn_Neck_01
+    100468: TF_Scout_RigV02:Foot_L_Roll
+    100470: TF_Scout_RigV02:Foot_R_Roll
+    100472: TF_Scout_RigV02:Foot_Rotations_group
+    100474: TF_Scout_RigV02:Foot_Rotations_group 1
+    100476: TF_Scout_RigV02:Geo_group
+    100478: TF_Scout_RigV02:Hat_geo
+    100480: TF_Scout_RigV02:Head_constraint_group_geo
+    100482: TF_Scout_RigV02:Head_GEO
+    100484: TF_Scout_RigV02:Head_geo_group
+    100486: TF_Scout_RigV02:HeadPhone
+    100488: TF_Scout_RigV02:Headphone_geo
+    100490: TF_Scout_RigV02:Heel_L_Pivot
+    100492: TF_Scout_RigV02:Heel_R_Pivot
+    100494: TF_Scout_RigV02:ikh_L_Arm
+    100496: TF_Scout_RigV02:ikh_L_ArmDist_grp
+    100498: TF_Scout_RigV02:ikh_L_ArmDistEnd_loc
+    100500: TF_Scout_RigV02:ikh_L_ArmDistStart_loc
+    100502: TF_Scout_RigV02:ikh_L_Ball
+    100504: TF_Scout_RigV02:ikh_L_Leg
+    100506: TF_Scout_RigV02:ikh_L_LegDist_grp
+    100508: TF_Scout_RigV02:ikh_L_LegDistEnd_loc
+    100510: TF_Scout_RigV02:ikh_L_LegDistStart_loc
+    100512: TF_Scout_RigV02:ikh_L_Toe
+    100514: TF_Scout_RigV02:ikh_R_Arm
+    100516: TF_Scout_RigV02:ikh_R_ArmDist_grp
+    100518: TF_Scout_RigV02:ikh_R_ArmDistEnd_loc
+    100520: TF_Scout_RigV02:ikh_R_ArmDistStart_loc
+    100522: TF_Scout_RigV02:ikh_R_Ball
+    100524: TF_Scout_RigV02:ikh_R_Leg
+    100526: TF_Scout_RigV02:ikh_R_LegDist_grp
+    100528: TF_Scout_RigV02:ikh_R_LegDistEnd_loc
+    100530: TF_Scout_RigV02:ikh_R_LegDistStart_loc
+    100532: TF_Scout_RigV02:ikh_R_Toe
+    100534: TF_Scout_RigV02:ikh_Spine
+    100536: TF_Scout_RigV02:Inner_Head_geo_group
+    100538: TF_Scout_RigV02:jnt_Bag_01
+    100540: TF_Scout_RigV02:Jnt_Base
+    100542: TF_Scout_RigV02:Jnt_Bat_01
+    100544: TF_Scout_RigV02:Jnt_Bat_02
+    100546: TF_Scout_RigV02:Jnt_Bat_03
+    100548: TF_Scout_RigV02:Jnt_Bat_04
+    100550: TF_Scout_RigV02:Jnt_Bat_nub
+    100552: TF_Scout_RigV02:Jnt_group
+    100554: TF_Scout_RigV02:jnt_L_Eye
+    100556: TF_Scout_RigV02:jnt_L_FK_Ankle
+    100558: TF_Scout_RigV02:jnt_L_FK_Ball
+    100560: TF_Scout_RigV02:jnt_L_FK_Elbow
+    100562: TF_Scout_RigV02:jnt_L_FK_Hip
+    100564: TF_Scout_RigV02:jnt_L_FK_Knee
+    100566: TF_Scout_RigV02:jnt_L_FK_Shoulder
+    100568: TF_Scout_RigV02:jnt_L_FK_Wrist
+    100570: TF_Scout_RigV02:jnt_L_IK_Ankle
+    100572: TF_Scout_RigV02:jnt_L_IK_Ball
+    100574: TF_Scout_RigV02:jnt_L_IK_Elbow
+    100576: TF_Scout_RigV02:jnt_L_IK_Hip
+    100578: TF_Scout_RigV02:jnt_L_IK_Knee
+    100580: TF_Scout_RigV02:jnt_L_IK_Shoulder
+    100582: TF_Scout_RigV02:jnt_L_IK_Wrist
+    100584: TF_Scout_RigV02:jnt_L_Leg_group
+    100586: TF_Scout_RigV02:jnt_Neck_group
+    100588: TF_Scout_RigV02:jnt_R_Eye
+    100590: TF_Scout_RigV02:jnt_R_FK_Ankle
+    100592: TF_Scout_RigV02:jnt_R_FK_Ball
+    100594: TF_Scout_RigV02:jnt_R_FK_Elbow
+    100596: TF_Scout_RigV02:jnt_R_FK_Hip
+    100598: TF_Scout_RigV02:jnt_R_FK_Knee
+    100600: TF_Scout_RigV02:jnt_R_FK_Shoulder
+    100602: TF_Scout_RigV02:jnt_R_FK_Wrist
+    100604: TF_Scout_RigV02:jnt_R_IK_Ankle
+    100606: TF_Scout_RigV02:jnt_R_IK_Ball
+    100608: TF_Scout_RigV02:jnt_R_IK_Elbow
+    100610: TF_Scout_RigV02:jnt_R_IK_Hip
+    100612: TF_Scout_RigV02:jnt_R_IK_Knee
+    100614: TF_Scout_RigV02:jnt_R_IK_Shoulder
+    100616: TF_Scout_RigV02:jnt_R_IK_Wrist
+    100618: TF_Scout_RigV02:jnt_R_Leg_group
+    100620: TF_Scout_RigV02:Jnt_Top
+    100622: TF_Scout_RigV02:L_Eye_geo
+    100624: TF_Scout_RigV02:L_Eye_group
+    100626: TF_Scout_RigV02:L_IK_Leg_group
+    100628: TF_Scout_RigV02:L_Side_BS_group
+    100630: TF_Scout_RigV02:Left_Face_group
+    100632: TF_Scout_RigV02:loc_Dist_group
+    100634: TF_Scout_RigV02:loc_L_Foot_Hips
+    100636: TF_Scout_RigV02:loc_L_Hand_group
+    100638: TF_Scout_RigV02:loc_L_Hand_Head
+    100640: TF_Scout_RigV02:loc_L_Hand_Hips
+    100642: TF_Scout_RigV02:loc_L_Hand_Shoulders
+    100644: TF_Scout_RigV02:loc_R_Foot_Hips
+    100646: TF_Scout_RigV02:loc_R_Hand_group
+    100648: TF_Scout_RigV02:loc_R_Hand_Head
+    100650: TF_Scout_RigV02:loc_R_Hand_Hips
+    100652: TF_Scout_RigV02:loc_R_Hand_Shoulders
+    100654: TF_Scout_RigV02:loc_SpaceSwitch_group
+    100656: TF_Scout_RigV02:Lower_lip_group
+    100658: TF_Scout_RigV02:Lwr_Teeth
+    100660: TF_Scout_RigV02:Props_group
+    100662: TF_Scout_RigV02:R_Eye_geo
+    100664: TF_Scout_RigV02:R_Eye_group
+    100666: TF_Scout_RigV02:R_IK_Leg_group
+    100668: TF_Scout_RigV02:R_Side_BS_group
+    100670: TF_Scout_RigV02:Right_Face_group
+    100672: TF_Scout_RigV02:Scout_Baseball_Bat_group
+    100674: TF_Scout_RigV02:spine_IK_group
+    100676: TF_Scout_RigV02:Talker
+    100678: TF_Scout_RigV02:tbn_01
+    100680: TF_Scout_RigV02:tbn_02
+    100682: TF_Scout_RigV02:Toe_L_Bend
+    100684: TF_Scout_RigV02:Toe_L_Pivot
+    100686: TF_Scout_RigV02:Toe_R_Bend
+    100688: TF_Scout_RigV02:Toe_R_Pivot
+    100690: TF_Scout_RigV02:Tongue_GEO
+    100692: TF_Scout_RigV02:Upr_Teeth
+    100694: TF_Scout_RigV02:World_CTRL
+    100696: TF_Scout_RigV02:WS_group
+    100698: control_LEFT
+    100700: control_RIGHT
+    100702: controlRail
+    100704: controlRail 1
+    100706: handle
+    100708: handle 1
+    100710: handle1
+    100712: handle1 1
+    100714: rail
+    100716: rail 1
+    100718: railmesh
+    100720: railmesh 1
+    100722: TF_Scout_RigV02:ScoutRig_group
+    400000: //RootNode
+    400002: TF_Scout_RigV02:Bag_GEO
+    400004: TF_Scout_RigV02:Bag_Prop_group
+    400006: TF_Scout_RigV02:Ball_L_Pivot
+    400008: TF_Scout_RigV02:Ball_R_Pivot
+    400010: TF_Scout_RigV02:Bank_L_Left
+    400012: TF_Scout_RigV02:Bank_L_Right
+    400014: TF_Scout_RigV02:Bank_R_Left
+    400016: TF_Scout_RigV02:Bank_R_Right
+    400018: TF_Scout_RigV02:Bat_Joint_group
+    400020: TF_Scout_RigV02:be_Head_nub
+    400022: TF_Scout_RigV02:be_Jaw_nub
+    400024: TF_Scout_RigV02:be_L_Index_04
+    400026: TF_Scout_RigV02:be_L_Mid_04
+    400028: TF_Scout_RigV02:be_L_Pinky_04
+    400030: TF_Scout_RigV02:be_L_Ring_04
+    400032: TF_Scout_RigV02:be_L_Thumb_04
+    400034: TF_Scout_RigV02:be_L_Toe
+    400036: TF_Scout_RigV02:be_L_Toe 1
+    400038: TF_Scout_RigV02:be_L_Toe 2
+    400040: TF_Scout_RigV02:be_R_Index_04
+    400042: TF_Scout_RigV02:be_R_Mid_04
+    400044: TF_Scout_RigV02:be_R_Pinky_04
+    400046: TF_Scout_RigV02:be_R_Ring_04
+    400048: TF_Scout_RigV02:be_R_Thumb_04
+    400050: TF_Scout_RigV02:be_R_Toe
+    400052: TF_Scout_RigV02:be_R_Toe 1
+    400054: TF_Scout_RigV02:be_R_Toe 2
+    400056: TF_Scout_RigV02:bn_L_Ankle
+    400058: TF_Scout_RigV02:bn_L_Ball
+    400060: TF_Scout_RigV02:bn_L_Clavicle
+    400062: TF_Scout_RigV02:bn_L_Elbow
+    400064: TF_Scout_RigV02:bn_L_Forearm
+    400066: TF_Scout_RigV02:bn_L_Hip
+    400068: TF_Scout_RigV02:bn_L_Index_01
+    400070: TF_Scout_RigV02:bn_L_Index_02
+    400072: TF_Scout_RigV02:bn_L_Index_03
+    400074: TF_Scout_RigV02:bn_L_Knee
+    400076: TF_Scout_RigV02:bn_L_Mid_01
+    400078: TF_Scout_RigV02:bn_L_Mid_02
+    400080: TF_Scout_RigV02:bn_L_Mid_03
+    400082: TF_Scout_RigV02:bn_L_Pinky_00
+    400084: TF_Scout_RigV02:bn_L_Pinky_01
+    400086: TF_Scout_RigV02:bn_L_Pinky_02
+    400088: TF_Scout_RigV02:bn_L_Pinky_03
+    400090: TF_Scout_RigV02:bn_L_Ring_01
+    400092: TF_Scout_RigV02:bn_L_Ring_02
+    400094: TF_Scout_RigV02:bn_L_Ring_03
+    400096: TF_Scout_RigV02:bn_L_Shoulder
+    400098: TF_Scout_RigV02:bn_L_Thumb_00
+    400100: TF_Scout_RigV02:bn_L_Thumb_01
+    400102: TF_Scout_RigV02:bn_L_Thumb_02
+    400104: TF_Scout_RigV02:bn_L_Thumb_03
+    400106: TF_Scout_RigV02:bn_L_Wrist
+    400108: TF_Scout_RigV02:bn_R_Ankle
+    400110: TF_Scout_RigV02:bn_R_Ball
+    400112: TF_Scout_RigV02:bn_R_Clavicle
+    400114: TF_Scout_RigV02:bn_R_Elbow
+    400116: TF_Scout_RigV02:bn_R_Forearm
+    400118: TF_Scout_RigV02:bn_R_Hip
+    400120: TF_Scout_RigV02:bn_R_Index_01
+    400122: TF_Scout_RigV02:bn_R_Index_02
+    400124: TF_Scout_RigV02:bn_R_Index_03
+    400126: TF_Scout_RigV02:bn_R_Knee
+    400128: TF_Scout_RigV02:bn_R_Mid_01
+    400130: TF_Scout_RigV02:bn_R_Mid_02
+    400132: TF_Scout_RigV02:bn_R_Mid_03
+    400134: TF_Scout_RigV02:bn_R_Pinky_00
+    400136: TF_Scout_RigV02:bn_R_Pinky_01
+    400138: TF_Scout_RigV02:bn_R_Pinky_02
+    400140: TF_Scout_RigV02:bn_R_Pinky_03
+    400142: TF_Scout_RigV02:bn_R_Ring_01
+    400144: TF_Scout_RigV02:bn_R_Ring_02
+    400146: TF_Scout_RigV02:bn_R_Ring_03
+    400148: TF_Scout_RigV02:bn_R_Shoulder
+    400150: TF_Scout_RigV02:bn_R_Thumb_00
+    400152: TF_Scout_RigV02:bn_R_Thumb_01
+    400154: TF_Scout_RigV02:bn_R_Thumb_02
+    400156: TF_Scout_RigV02:bn_R_Thumb_03
+    400158: TF_Scout_RigV02:bn_R_Wrist
+    400160: TF_Scout_RigV02:bn_Spine_01
+    400162: TF_Scout_RigV02:bn_Spine_02
+    400164: TF_Scout_RigV02:bn_Spine_03
+    400166: TF_Scout_RigV02:bn_Spine_04
+    400168: TF_Scout_RigV02:bn_Spine_05
+    400170: TF_Scout_RigV02:bn_Spine_06
+    400172: TF_Scout_RigV02:Body_geo
+    400174: TF_Scout_RigV02:BS_group
+    400176: TF_Scout_RigV02:BS_Master
+    400178: TF_Scout_RigV02:Cntrl_Arms_group
+    400180: TF_Scout_RigV02:Cntrl_Bag
+    400182: TF_Scout_RigV02:Cntrl_Bag_group
+    400184: TF_Scout_RigV02:Cntrl_Bat_group
+    400186: TF_Scout_RigV02:Cntrl_Brow
+    400188: TF_Scout_RigV02:Cntrl_COG
+    400190: TF_Scout_RigV02:Cntrl_COG_group
+    400192: TF_Scout_RigV02:Cntrl_Eyes
+    400194: TF_Scout_RigV02:Cntrl_Eyes_group
+    400196: TF_Scout_RigV02:Cntrl_group
+    400198: TF_Scout_RigV02:Cntrl_Hat
+    400200: TF_Scout_RigV02:Cntrl_Hat_group
+    400202: TF_Scout_RigV02:Cntrl_Head
+    400204: TF_Scout_RigV02:Cntrl_Head_group
+    400206: TF_Scout_RigV02:Cntrl_Headphone
+    400208: TF_Scout_RigV02:Cntrl_Headphone_group
+    400210: TF_Scout_RigV02:Cntrl_Hips
+    400212: TF_Scout_RigV02:Cntrl_Hips_group
+    400214: TF_Scout_RigV02:Cntrl_IK_L_Arm_group
+    400216: TF_Scout_RigV02:Cntrl_IK_R_Arm_group
+    400218: TF_Scout_RigV02:Cntrl_Jaw
+    400220: TF_Scout_RigV02:Cntrl_L_Blink
+    400222: TF_Scout_RigV02:Cntrl_L_Brow_In
+    400224: TF_Scout_RigV02:Cntrl_L_Brow_Mid
+    400226: TF_Scout_RigV02:Cntrl_L_Brow_Out
+    400228: TF_Scout_RigV02:Cntrl_L_Clavicle
+    400230: TF_Scout_RigV02:Cntrl_L_Clavicle_group
+    400232: TF_Scout_RigV02:Cntrl_L_Clavicle_group_group
+    400234: TF_Scout_RigV02:Cntrl_L_Cnr_Mouth
+    400236: TF_Scout_RigV02:Cntrl_L_Eye
+    400238: TF_Scout_RigV02:Cntrl_L_Fingers
+    400240: TF_Scout_RigV02:Cntrl_L_FK_Ankle
+    400242: TF_Scout_RigV02:Cntrl_L_FK_Ankle_group
+    400244: TF_Scout_RigV02:Cntrl_L_FK_Arm_group
+    400246: TF_Scout_RigV02:Cntrl_L_FK_Ball
+    400248: TF_Scout_RigV02:Cntrl_L_FK_Ball_group
+    400250: TF_Scout_RigV02:Cntrl_L_FK_Elbow
+    400252: TF_Scout_RigV02:Cntrl_L_FK_Elbow_group
+    400254: TF_Scout_RigV02:Cntrl_L_FK_Knee
+    400256: TF_Scout_RigV02:Cntrl_L_FK_Knee_group
+    400258: TF_Scout_RigV02:Cntrl_L_FK_Leg
+    400260: TF_Scout_RigV02:Cntrl_L_FK_Leg_group
+    400262: TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group
+    400264: TF_Scout_RigV02:Cntrl_L_FK_Shoulder
+    400266: TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group
+    400268: TF_Scout_RigV02:Cntrl_L_FK_Wrist
+    400270: TF_Scout_RigV02:Cntrl_L_FK_Wrist_group
+    400272: TF_Scout_RigV02:Cntrl_L_Foot
+    400274: TF_Scout_RigV02:Cntrl_L_Foot_group
+    400276: TF_Scout_RigV02:Cntrl_L_Foot_Space_group
+    400278: TF_Scout_RigV02:Cntrl_L_Foot_Switch
+    400280: TF_Scout_RigV02:Cntrl_L_Foot_Switch_group
+    400282: TF_Scout_RigV02:Cntrl_L_Hand_group
+    400284: TF_Scout_RigV02:Cntrl_L_Hand_Space_group
+    400286: TF_Scout_RigV02:Cntrl_L_IK_Hand
+    400288: TF_Scout_RigV02:Cntrl_L_IK_Hand_group
+    400290: TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group
+    400292: TF_Scout_RigV02:Cntrl_L_Lwr_Lip
+    400294: TF_Scout_RigV02:Cntrl_L_Pinky
+    400296: TF_Scout_RigV02:Cntrl_L_Pinky_group
+    400298: TF_Scout_RigV02:Cntrl_L_PV_Arm
+    400300: TF_Scout_RigV02:Cntrl_L_PV_Leg
+    400302: TF_Scout_RigV02:Cntrl_L_PV_Leg_group
+    400304: TF_Scout_RigV02:Cntrl_L_Sneer
+    400306: TF_Scout_RigV02:Cntrl_L_Switch
+    400308: TF_Scout_RigV02:Cntrl_L_Thumb
+    400310: TF_Scout_RigV02:Cntrl_L_Thumb_group
+    400312: TF_Scout_RigV02:Cntrl_L_Upr_Lip
+    400314: TF_Scout_RigV02:Cntrl_Legs_group
+    400316: TF_Scout_RigV02:Cntrl_Lwr_Lip
+    400318: TF_Scout_RigV02:Cntrl_Mouthpeice
+    400320: TF_Scout_RigV02:Cntrl_Mouthpeice_group
+    400322: TF_Scout_RigV02:Cntrl_Neck
+    400324: TF_Scout_RigV02:Cntrl_Neck_group
+    400326: TF_Scout_RigV02:Cntrl_Nose
+    400328: TF_Scout_RigV02:Cntrl_Parent_Bat_group
+    400330: TF_Scout_RigV02:Cntrl_R_Blink
+    400332: TF_Scout_RigV02:Cntrl_R_Brow_In
+    400334: TF_Scout_RigV02:Cntrl_R_Brow_Mid
+    400336: TF_Scout_RigV02:Cntrl_R_Brow_Out
+    400338: TF_Scout_RigV02:Cntrl_R_Clavicle
+    400340: TF_Scout_RigV02:Cntrl_R_Clavicle_group
+    400342: TF_Scout_RigV02:Cntrl_R_Clavicle_group_group
+    400344: TF_Scout_RigV02:Cntrl_R_Cnr_Mouth
+    400346: TF_Scout_RigV02:Cntrl_R_Eye
+    400348: TF_Scout_RigV02:Cntrl_R_Fingers
+    400350: TF_Scout_RigV02:Cntrl_R_FK_Ankle
+    400352: TF_Scout_RigV02:Cntrl_R_FK_Ankle_group
+    400354: TF_Scout_RigV02:Cntrl_R_FK_Arm_group
+    400356: TF_Scout_RigV02:Cntrl_R_FK_Ball
+    400358: TF_Scout_RigV02:Cntrl_R_FK_Ball_group
+    400360: TF_Scout_RigV02:Cntrl_R_FK_Elbow
+    400362: TF_Scout_RigV02:Cntrl_R_FK_Elbow_group
+    400364: TF_Scout_RigV02:Cntrl_R_FK_Knee
+    400366: TF_Scout_RigV02:Cntrl_R_FK_Knee_group
+    400368: TF_Scout_RigV02:Cntrl_R_FK_Leg
+    400370: TF_Scout_RigV02:Cntrl_R_FK_Leg_group
+    400372: TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group
+    400374: TF_Scout_RigV02:Cntrl_R_FK_Shoulder
+    400376: TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group
+    400378: TF_Scout_RigV02:Cntrl_R_FK_Wrist
+    400380: TF_Scout_RigV02:Cntrl_R_FK_Wrist_group
+    400382: TF_Scout_RigV02:Cntrl_R_Foot
+    400384: TF_Scout_RigV02:Cntrl_R_Foot_group
+    400386: TF_Scout_RigV02:Cntrl_R_Foot_Space_group
+    400388: TF_Scout_RigV02:Cntrl_R_Foot_Switch
+    400390: TF_Scout_RigV02:Cntrl_R_Foot_Switch 1
+    400392: TF_Scout_RigV02:Cntrl_R_Foot_Switch_group
+    400394: TF_Scout_RigV02:Cntrl_R_Hand_group
+    400396: TF_Scout_RigV02:Cntrl_R_Hand_Space_group
+    400398: TF_Scout_RigV02:Cntrl_R_IK_Hand
+    400400: TF_Scout_RigV02:Cntrl_R_IK_Hand_group
+    400402: TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group
+    400404: TF_Scout_RigV02:Cntrl_R_Lwr_Lip
+    400406: TF_Scout_RigV02:Cntrl_R_Pinky
+    400408: TF_Scout_RigV02:Cntrl_R_Pinky_group
+    400410: TF_Scout_RigV02:Cntrl_R_PV_Arm
+    400412: TF_Scout_RigV02:Cntrl_R_PV_Leg
+    400414: TF_Scout_RigV02:Cntrl_R_PV_Leg_group
+    400416: TF_Scout_RigV02:Cntrl_R_Sneer
+    400418: TF_Scout_RigV02:Cntrl_R_Switch
+    400420: TF_Scout_RigV02:Cntrl_R_Thumb
+    400422: TF_Scout_RigV02:Cntrl_R_Thumb_group
+    400424: TF_Scout_RigV02:Cntrl_R_Upr_Lip
+    400426: TF_Scout_RigV02:Cntrl_Shoulders
+    400428: TF_Scout_RigV02:Cntrl_Shoulders_group
+    400430: TF_Scout_RigV02:Cntrl_Spine01_group
+    400432: TF_Scout_RigV02:Cntrl_Spine02_group
+    400434: TF_Scout_RigV02:Cntrl_Spine_01
+    400436: TF_Scout_RigV02:Cntrl_Spine_03
+    400438: TF_Scout_RigV02:Cntrl_Tongue_01
+    400440: TF_Scout_RigV02:Cntrl_Tongue_01_group
+    400442: TF_Scout_RigV02:Cntrl_Tongue_02
+    400444: TF_Scout_RigV02:Cntrl_Tongue_02_group
+    400446: TF_Scout_RigV02:Cntrl_Upr_Lip
+    400448: TF_Scout_RigV02:Cntrl_Zero
+    400450: TF_Scout_RigV02:Cntrl_Zero_group
+    400452: TF_Scout_RigV02:curve_spine
+    400454: TF_Scout_RigV02:DO_NOT_TOUCH
+    400456: TF_Scout_RigV02:Dog_Tags_GEO
+    400458: TF_Scout_RigV02:Facial_UI
+    400460: TF_Scout_RigV02:Facial_UI_group
+    400462: TF_Scout_RigV02:fbn_Head_01
+    400464: TF_Scout_RigV02:fbn_Jaw_01
+    400466: TF_Scout_RigV02:fbn_Neck_01
+    400468: TF_Scout_RigV02:Foot_L_Roll
+    400470: TF_Scout_RigV02:Foot_R_Roll
+    400472: TF_Scout_RigV02:Foot_Rotations_group
+    400474: TF_Scout_RigV02:Foot_Rotations_group 1
+    400476: TF_Scout_RigV02:Geo_group
+    400478: TF_Scout_RigV02:Hat_geo
+    400480: TF_Scout_RigV02:Head_constraint_group_geo
+    400482: TF_Scout_RigV02:Head_GEO
+    400484: TF_Scout_RigV02:Head_geo_group
+    400486: TF_Scout_RigV02:HeadPhone
+    400488: TF_Scout_RigV02:Headphone_geo
+    400490: TF_Scout_RigV02:Heel_L_Pivot
+    400492: TF_Scout_RigV02:Heel_R_Pivot
+    400494: TF_Scout_RigV02:ikh_L_Arm
+    400496: TF_Scout_RigV02:ikh_L_ArmDist_grp
+    400498: TF_Scout_RigV02:ikh_L_ArmDistEnd_loc
+    400500: TF_Scout_RigV02:ikh_L_ArmDistStart_loc
+    400502: TF_Scout_RigV02:ikh_L_Ball
+    400504: TF_Scout_RigV02:ikh_L_Leg
+    400506: TF_Scout_RigV02:ikh_L_LegDist_grp
+    400508: TF_Scout_RigV02:ikh_L_LegDistEnd_loc
+    400510: TF_Scout_RigV02:ikh_L_LegDistStart_loc
+    400512: TF_Scout_RigV02:ikh_L_Toe
+    400514: TF_Scout_RigV02:ikh_R_Arm
+    400516: TF_Scout_RigV02:ikh_R_ArmDist_grp
+    400518: TF_Scout_RigV02:ikh_R_ArmDistEnd_loc
+    400520: TF_Scout_RigV02:ikh_R_ArmDistStart_loc
+    400522: TF_Scout_RigV02:ikh_R_Ball
+    400524: TF_Scout_RigV02:ikh_R_Leg
+    400526: TF_Scout_RigV02:ikh_R_LegDist_grp
+    400528: TF_Scout_RigV02:ikh_R_LegDistEnd_loc
+    400530: TF_Scout_RigV02:ikh_R_LegDistStart_loc
+    400532: TF_Scout_RigV02:ikh_R_Toe
+    400534: TF_Scout_RigV02:ikh_Spine
+    400536: TF_Scout_RigV02:Inner_Head_geo_group
+    400538: TF_Scout_RigV02:jnt_Bag_01
+    400540: TF_Scout_RigV02:Jnt_Base
+    400542: TF_Scout_RigV02:Jnt_Bat_01
+    400544: TF_Scout_RigV02:Jnt_Bat_02
+    400546: TF_Scout_RigV02:Jnt_Bat_03
+    400548: TF_Scout_RigV02:Jnt_Bat_04
+    400550: TF_Scout_RigV02:Jnt_Bat_nub
+    400552: TF_Scout_RigV02:Jnt_group
+    400554: TF_Scout_RigV02:jnt_L_Eye
+    400556: TF_Scout_RigV02:jnt_L_FK_Ankle
+    400558: TF_Scout_RigV02:jnt_L_FK_Ball
+    400560: TF_Scout_RigV02:jnt_L_FK_Elbow
+    400562: TF_Scout_RigV02:jnt_L_FK_Hip
+    400564: TF_Scout_RigV02:jnt_L_FK_Knee
+    400566: TF_Scout_RigV02:jnt_L_FK_Shoulder
+    400568: TF_Scout_RigV02:jnt_L_FK_Wrist
+    400570: TF_Scout_RigV02:jnt_L_IK_Ankle
+    400572: TF_Scout_RigV02:jnt_L_IK_Ball
+    400574: TF_Scout_RigV02:jnt_L_IK_Elbow
+    400576: TF_Scout_RigV02:jnt_L_IK_Hip
+    400578: TF_Scout_RigV02:jnt_L_IK_Knee
+    400580: TF_Scout_RigV02:jnt_L_IK_Shoulder
+    400582: TF_Scout_RigV02:jnt_L_IK_Wrist
+    400584: TF_Scout_RigV02:jnt_L_Leg_group
+    400586: TF_Scout_RigV02:jnt_Neck_group
+    400588: TF_Scout_RigV02:jnt_R_Eye
+    400590: TF_Scout_RigV02:jnt_R_FK_Ankle
+    400592: TF_Scout_RigV02:jnt_R_FK_Ball
+    400594: TF_Scout_RigV02:jnt_R_FK_Elbow
+    400596: TF_Scout_RigV02:jnt_R_FK_Hip
+    400598: TF_Scout_RigV02:jnt_R_FK_Knee
+    400600: TF_Scout_RigV02:jnt_R_FK_Shoulder
+    400602: TF_Scout_RigV02:jnt_R_FK_Wrist
+    400604: TF_Scout_RigV02:jnt_R_IK_Ankle
+    400606: TF_Scout_RigV02:jnt_R_IK_Ball
+    400608: TF_Scout_RigV02:jnt_R_IK_Elbow
+    400610: TF_Scout_RigV02:jnt_R_IK_Hip
+    400612: TF_Scout_RigV02:jnt_R_IK_Knee
+    400614: TF_Scout_RigV02:jnt_R_IK_Shoulder
+    400616: TF_Scout_RigV02:jnt_R_IK_Wrist
+    400618: TF_Scout_RigV02:jnt_R_Leg_group
+    400620: TF_Scout_RigV02:Jnt_Top
+    400622: TF_Scout_RigV02:L_Eye_geo
+    400624: TF_Scout_RigV02:L_Eye_group
+    400626: TF_Scout_RigV02:L_IK_Leg_group
+    400628: TF_Scout_RigV02:L_Side_BS_group
+    400630: TF_Scout_RigV02:Left_Face_group
+    400632: TF_Scout_RigV02:loc_Dist_group
+    400634: TF_Scout_RigV02:loc_L_Foot_Hips
+    400636: TF_Scout_RigV02:loc_L_Hand_group
+    400638: TF_Scout_RigV02:loc_L_Hand_Head
+    400640: TF_Scout_RigV02:loc_L_Hand_Hips
+    400642: TF_Scout_RigV02:loc_L_Hand_Shoulders
+    400644: TF_Scout_RigV02:loc_R_Foot_Hips
+    400646: TF_Scout_RigV02:loc_R_Hand_group
+    400648: TF_Scout_RigV02:loc_R_Hand_Head
+    400650: TF_Scout_RigV02:loc_R_Hand_Hips
+    400652: TF_Scout_RigV02:loc_R_Hand_Shoulders
+    400654: TF_Scout_RigV02:loc_SpaceSwitch_group
+    400656: TF_Scout_RigV02:Lower_lip_group
+    400658: TF_Scout_RigV02:Lwr_Teeth
+    400660: TF_Scout_RigV02:Props_group
+    400662: TF_Scout_RigV02:R_Eye_geo
+    400664: TF_Scout_RigV02:R_Eye_group
+    400666: TF_Scout_RigV02:R_IK_Leg_group
+    400668: TF_Scout_RigV02:R_Side_BS_group
+    400670: TF_Scout_RigV02:Right_Face_group
+    400672: TF_Scout_RigV02:Scout_Baseball_Bat_group
+    400674: TF_Scout_RigV02:spine_IK_group
+    400676: TF_Scout_RigV02:Talker
+    400678: TF_Scout_RigV02:tbn_01
+    400680: TF_Scout_RigV02:tbn_02
+    400682: TF_Scout_RigV02:Toe_L_Bend
+    400684: TF_Scout_RigV02:Toe_L_Pivot
+    400686: TF_Scout_RigV02:Toe_R_Bend
+    400688: TF_Scout_RigV02:Toe_R_Pivot
+    400690: TF_Scout_RigV02:Tongue_GEO
+    400692: TF_Scout_RigV02:Upr_Teeth
+    400694: TF_Scout_RigV02:World_CTRL
+    400696: TF_Scout_RigV02:WS_group
+    400698: control_LEFT
+    400700: control_RIGHT
+    400702: controlRail
+    400704: controlRail 1
+    400706: handle
+    400708: handle 1
+    400710: handle1
+    400712: handle1 1
+    400714: rail
+    400716: rail 1
+    400718: railmesh
+    400720: railmesh 1
+    400722: TF_Scout_RigV02:ScoutRig_group
+    2300000: TF_Scout_RigV02:BS_Master
+    2300002: TF_Scout_RigV02:Hat_geo
+    2300004: TF_Scout_RigV02:HeadPhone
+    2300006: TF_Scout_RigV02:L_Eye_geo
+    2300008: TF_Scout_RigV02:Lwr_Teeth
+    2300010: TF_Scout_RigV02:R_Eye_geo
+    2300012: TF_Scout_RigV02:Talker
+    2300014: TF_Scout_RigV02:Upr_Teeth
+    2300016: handle1
+    2300018: handle1 1
+    3300000: TF_Scout_RigV02:BS_Master
+    3300002: TF_Scout_RigV02:Hat_geo
+    3300004: TF_Scout_RigV02:HeadPhone
+    3300006: TF_Scout_RigV02:L_Eye_geo
+    3300008: TF_Scout_RigV02:Lwr_Teeth
+    3300010: TF_Scout_RigV02:R_Eye_geo
+    3300012: TF_Scout_RigV02:Talker
+    3300014: TF_Scout_RigV02:Upr_Teeth
+    3300016: handle1
+    3300018: handle1 1
+    4300000: TF_Scout_RigV02:Upr_Teeth
+    4300002: TF_Scout_RigV02:Lwr_Teeth
+    4300004: TF_Scout_RigV02:L_Eye_geo
+    4300006: TF_Scout_RigV02:R_Eye_geo
+    4300008: TF_Scout_RigV02:Tongue_GEO
+    4300010: TF_Scout_RigV02:HeadPhone
+    4300012: TF_Scout_RigV02:Talker
+    4300014: TF_Scout_RigV02:Hat_geo
+    4300016: TF_Scout_RigV02:Head_GEO
+    4300018: TF_Scout_RigV02:BS_Master
+    4300020: TF_Scout_RigV02:Bag_GEO
+    4300022: TF_Scout_RigV02:Dog_Tags_GEO
+    4300024: TF_Scout_RigV02:Body_geo
+    4300026: railmesh
+    4300028: handle1
+    4300030: railmesh
+    4300032: handle1
+    7400000: default
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: TF_Scout_RigV02:Bag_GEO
+    13700002: TF_Scout_RigV02:Body_geo
+    13700004: TF_Scout_RigV02:Dog_Tags_GEO
+    13700006: TF_Scout_RigV02:Head_GEO
+    13700008: TF_Scout_RigV02:Tongue_GEO
+    13700010: railmesh
+    13700012: railmesh 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: default
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: control_LEFT
+        weight: 1
+      - path: control_LEFT/controlRail
+        weight: 1
+      - path: control_LEFT/controlRail/rail
+        weight: 1
+      - path: control_LEFT/controlRail/rail/handle
+        weight: 1
+      - path: control_LEFT/controlRail/rail/handle/handle1
+        weight: 1
+      - path: control_LEFT/controlRail/railmesh
+        weight: 1
+      - path: control_RIGHT
+        weight: 1
+      - path: control_RIGHT/controlRail 1
+        weight: 1
+      - path: control_RIGHT/controlRail 1/rail 1
+        weight: 1
+      - path: control_RIGHT/controlRail 1/rail 1/handle 1
+        weight: 1
+      - path: control_RIGHT/controlRail 1/rail 1/handle 1/handle1 1
+        weight: 1
+      - path: control_RIGHT/controlRail 1/railmesh 1
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Body_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:BS_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:BS_group/TF_Scout_RigV02:BS_Master
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:BS_group/TF_Scout_RigV02:L_Side_BS_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:BS_group/TF_Scout_RigV02:R_Side_BS_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_constraint_group_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_constraint_group_geo/TF_Scout_RigV02:Hat_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_constraint_group_geo/TF_Scout_RigV02:Headphone_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_constraint_group_geo/TF_Scout_RigV02:Headphone_geo/TF_Scout_RigV02:HeadPhone
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_constraint_group_geo/TF_Scout_RigV02:Headphone_geo/TF_Scout_RigV02:HeadPhone/TF_Scout_RigV02:Talker
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Head_GEO
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:L_Eye_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:L_Eye_group/TF_Scout_RigV02:L_Eye_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:Lwr_Teeth
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:R_Eye_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:R_Eye_group/TF_Scout_RigV02:R_Eye_geo
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:Tongue_GEO
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Head_geo_group/TF_Scout_RigV02:Inner_Head_geo_group/TF_Scout_RigV02:Upr_Teeth
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Bag_Prop_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Bag_Prop_group/TF_Scout_RigV02:Bag_GEO
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Bag_Prop_group/TF_Scout_RigV02:Cntrl_Bag_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Bag_Prop_group/TF_Scout_RigV02:Cntrl_Bag_group/TF_Scout_RigV02:Cntrl_Bag
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Dog_Tags_GEO
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:Geo_group/TF_Scout_RigV02:Props_group/TF_Scout_RigV02:Scout_Baseball_Bat_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group/TF_Scout_RigV02:Jnt_Bat_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group/TF_Scout_RigV02:Jnt_Bat_01/TF_Scout_RigV02:Jnt_Bat_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group/TF_Scout_RigV02:Jnt_Bat_01/TF_Scout_RigV02:Jnt_Bat_02/TF_Scout_RigV02:Jnt_Bat_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group/TF_Scout_RigV02:Jnt_Bat_01/TF_Scout_RigV02:Jnt_Bat_02/TF_Scout_RigV02:Jnt_Bat_03/TF_Scout_RigV02:Jnt_Bat_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Bat_Joint_group/TF_Scout_RigV02:Jnt_Bat_01/TF_Scout_RigV02:Jnt_Bat_02/TF_Scout_RigV02:Jnt_Bat_03/TF_Scout_RigV02:Jnt_Bat_04/TF_Scout_RigV02:Jnt_Bat_nub
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Bat_group/TF_Scout_RigV02:Cntrl_Parent_Bat_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group/TF_Scout_RigV02:Cntrl_L_FK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group/TF_Scout_RigV02:Cntrl_L_FK_Knee/TF_Scout_RigV02:Cntrl_L_FK_Ankle_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group/TF_Scout_RigV02:Cntrl_L_FK_Knee/TF_Scout_RigV02:Cntrl_L_FK_Ankle_group/TF_Scout_RigV02:Cntrl_L_FK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group/TF_Scout_RigV02:Cntrl_L_FK_Knee/TF_Scout_RigV02:Cntrl_L_FK_Ankle_group/TF_Scout_RigV02:Cntrl_L_FK_Ankle/TF_Scout_RigV02:Cntrl_L_FK_Ball_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_L_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_L_FK_Leg_group/TF_Scout_RigV02:Cntrl_L_FK_Leg/TF_Scout_RigV02:Cntrl_L_FK_Knee_group/TF_Scout_RigV02:Cntrl_L_FK_Knee/TF_Scout_RigV02:Cntrl_L_FK_Ankle_group/TF_Scout_RigV02:Cntrl_L_FK_Ankle/TF_Scout_RigV02:Cntrl_L_FK_Ball_group/TF_Scout_RigV02:Cntrl_L_FK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group/TF_Scout_RigV02:Cntrl_R_FK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group/TF_Scout_RigV02:Cntrl_R_FK_Knee/TF_Scout_RigV02:Cntrl_R_FK_Ankle_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group/TF_Scout_RigV02:Cntrl_R_FK_Knee/TF_Scout_RigV02:Cntrl_R_FK_Ankle_group/TF_Scout_RigV02:Cntrl_R_FK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group/TF_Scout_RigV02:Cntrl_R_FK_Knee/TF_Scout_RigV02:Cntrl_R_FK_Ankle_group/TF_Scout_RigV02:Cntrl_R_FK_Ankle/TF_Scout_RigV02:Cntrl_R_FK_Ball_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Cntrl_R_FK_Leg_group_group/TF_Scout_RigV02:Cntrl_R_FK_Leg_group/TF_Scout_RigV02:Cntrl_R_FK_Leg/TF_Scout_RigV02:Cntrl_R_FK_Knee_group/TF_Scout_RigV02:Cntrl_R_FK_Knee/TF_Scout_RigV02:Cntrl_R_FK_Ankle_group/TF_Scout_RigV02:Cntrl_R_FK_Ankle/TF_Scout_RigV02:Cntrl_R_FK_Ball_group/TF_Scout_RigV02:Cntrl_R_FK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Hips_group/TF_Scout_RigV02:Cntrl_Hips/TF_Scout_RigV02:Jnt_Base
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_L_Clavicle_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_L_Clavicle_group_group/TF_Scout_RigV02:Cntrl_L_Clavicle_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_L_Clavicle_group_group/TF_Scout_RigV02:Cntrl_L_Clavicle_group/TF_Scout_RigV02:Cntrl_L_Clavicle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_Neck_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_Neck_group/TF_Scout_RigV02:Cntrl_Neck
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_R_Clavicle_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_R_Clavicle_group_group/TF_Scout_RigV02:Cntrl_R_Clavicle_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Cntrl_R_Clavicle_group_group/TF_Scout_RigV02:Cntrl_R_Clavicle_group/TF_Scout_RigV02:Cntrl_R_Clavicle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_COG_group/TF_Scout_RigV02:Cntrl_COG/TF_Scout_RigV02:Cntrl_Spine01_group/TF_Scout_RigV02:Cntrl_Spine_01/TF_Scout_RigV02:Cntrl_Spine02_group/TF_Scout_RigV02:Cntrl_Spine_03/TF_Scout_RigV02:Cntrl_Shoulders_group/TF_Scout_RigV02:Cntrl_Shoulders/TF_Scout_RigV02:Jnt_Top
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Zero_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:Cntrl_Zero_group/TF_Scout_RigV02:Cntrl_Zero
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_Hand_Space_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_Hand_Space_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_Hand_Space_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_Hand_Space_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group/TF_Scout_RigV02:Cntrl_L_IK_Hand
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_Hand_Space_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_L_IK_Hand_group/TF_Scout_RigV02:Cntrl_L_IK_Hand/TF_Scout_RigV02:ikh_L_Arm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_L_Arm_group/TF_Scout_RigV02:Cntrl_L_PV_Arm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_Hand_Space_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_Hand_Space_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_Hand_Space_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_Hand_Space_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group/TF_Scout_RigV02:Cntrl_R_IK_Hand
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_Hand_Space_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group_group/TF_Scout_RigV02:Cntrl_R_IK_Hand_group/TF_Scout_RigV02:Cntrl_R_IK_Hand/TF_Scout_RigV02:ikh_R_Arm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_IK_R_Arm_group/TF_Scout_RigV02:Cntrl_R_PV_Arm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder/TF_Scout_RigV02:Cntrl_L_FK_Elbow_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder/TF_Scout_RigV02:Cntrl_L_FK_Elbow_group/TF_Scout_RigV02:Cntrl_L_FK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder/TF_Scout_RigV02:Cntrl_L_FK_Elbow_group/TF_Scout_RigV02:Cntrl_L_FK_Elbow/TF_Scout_RigV02:Cntrl_L_FK_Wrist_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_FK_Arm_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_L_FK_Shoulder/TF_Scout_RigV02:Cntrl_L_FK_Elbow_group/TF_Scout_RigV02:Cntrl_L_FK_Elbow/TF_Scout_RigV02:Cntrl_L_FK_Wrist_group/TF_Scout_RigV02:Cntrl_L_FK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Fingers
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Pinky_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Pinky_group/TF_Scout_RigV02:Cntrl_L_Pinky
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Switch
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Thumb_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_L_Hand_group/TF_Scout_RigV02:Cntrl_L_Thumb_group/TF_Scout_RigV02:Cntrl_L_Thumb
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder/TF_Scout_RigV02:Cntrl_R_FK_Elbow_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder/TF_Scout_RigV02:Cntrl_R_FK_Elbow_group/TF_Scout_RigV02:Cntrl_R_FK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder/TF_Scout_RigV02:Cntrl_R_FK_Elbow_group/TF_Scout_RigV02:Cntrl_R_FK_Elbow/TF_Scout_RigV02:Cntrl_R_FK_Wrist_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_FK_Arm_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder_group/TF_Scout_RigV02:Cntrl_R_FK_Shoulder/TF_Scout_RigV02:Cntrl_R_FK_Elbow_group/TF_Scout_RigV02:Cntrl_R_FK_Elbow/TF_Scout_RigV02:Cntrl_R_FK_Wrist_group/TF_Scout_RigV02:Cntrl_R_FK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Fingers
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Pinky_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Pinky_group/TF_Scout_RigV02:Cntrl_R_Pinky
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Switch
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Thumb_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Arms_group/TF_Scout_RigV02:Cntrl_R_Hand_group/TF_Scout_RigV02:Cntrl_R_Thumb_group/TF_Scout_RigV02:Cntrl_R_Thumb
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Eyes_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Eyes_group/TF_Scout_RigV02:Cntrl_Eyes
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Eyes_group/TF_Scout_RigV02:Cntrl_Eyes/TF_Scout_RigV02:Cntrl_L_Eye
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Eyes_group/TF_Scout_RigV02:Cntrl_Eyes/TF_Scout_RigV02:Cntrl_R_Eye
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Hat_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Hat_group/TF_Scout_RigV02:Cntrl_Hat
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Headphone_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Headphone_group/TF_Scout_RigV02:Cntrl_Headphone
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Headphone_group/TF_Scout_RigV02:Cntrl_Headphone/TF_Scout_RigV02:Cntrl_Mouthpeice_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Cntrl_Headphone_group/TF_Scout_RigV02:Cntrl_Headphone/TF_Scout_RigV02:Cntrl_Mouthpeice_group/TF_Scout_RigV02:Cntrl_Mouthpeice
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Brow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Cntrl_Tongue_01_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Cntrl_Tongue_01_group/TF_Scout_RigV02:Cntrl_Tongue_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Cntrl_Tongue_01_group/TF_Scout_RigV02:Cntrl_Tongue_01/TF_Scout_RigV02:Cntrl_Tongue_02_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Cntrl_Tongue_01_group/TF_Scout_RigV02:Cntrl_Tongue_01/TF_Scout_RigV02:Cntrl_Tongue_02_group/TF_Scout_RigV02:Cntrl_Tongue_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Lower_lip_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Lower_lip_group/TF_Scout_RigV02:Cntrl_L_Lwr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Lower_lip_group/TF_Scout_RigV02:Cntrl_Lwr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Jaw/TF_Scout_RigV02:Lower_lip_group/TF_Scout_RigV02:Cntrl_R_Lwr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Nose
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Cntrl_Upr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Blink
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Brow_In
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Brow_Mid
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Brow_Out
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Cnr_Mouth
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Sneer
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Left_Face_group/TF_Scout_RigV02:Cntrl_L_Upr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Blink
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Brow_In
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Brow_Mid
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Brow_Out
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Cnr_Mouth
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Sneer
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Head_group/TF_Scout_RigV02:Cntrl_Head/TF_Scout_RigV02:Facial_UI_group/TF_Scout_RigV02:Facial_UI/TF_Scout_RigV02:Right_Face_group/TF_Scout_RigV02:Cntrl_R_Upr_Lip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:Cntrl_L_Foot_Switch_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:Cntrl_L_Foot_Switch_group/TF_Scout_RigV02:Cntrl_L_Foot_Switch
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:Cntrl_L_Foot_Switch_group/TF_Scout_RigV02:Cntrl_R_Foot_Switch
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:Cntrl_R_Foot_Switch_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:Cntrl_R_Foot_Switch_group/TF_Scout_RigV02:Cntrl_R_Foot_Switch
+          1
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot/TF_Scout_RigV02:Foot_L_Roll
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot/TF_Scout_RigV02:Foot_L_Roll/TF_Scout_RigV02:ikh_L_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot/TF_Scout_RigV02:Foot_L_Roll/TF_Scout_RigV02:ikh_L_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot/TF_Scout_RigV02:Toe_L_Bend
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_Foot_Space_group/TF_Scout_RigV02:Cntrl_L_Foot_group/TF_Scout_RigV02:Cntrl_L_Foot/TF_Scout_RigV02:Foot_Rotations_group/TF_Scout_RigV02:Toe_L_Pivot/TF_Scout_RigV02:Ball_L_Pivot/TF_Scout_RigV02:Bank_L_Right/TF_Scout_RigV02:Bank_L_Left/TF_Scout_RigV02:Heel_L_Pivot/TF_Scout_RigV02:Toe_L_Bend/TF_Scout_RigV02:ikh_L_Toe
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_PV_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:L_IK_Leg_group/TF_Scout_RigV02:Cntrl_L_PV_Leg_group/TF_Scout_RigV02:Cntrl_L_PV_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot/TF_Scout_RigV02:Foot_R_Roll
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot/TF_Scout_RigV02:Foot_R_Roll/TF_Scout_RigV02:ikh_R_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot/TF_Scout_RigV02:Foot_R_Roll/TF_Scout_RigV02:ikh_R_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot/TF_Scout_RigV02:Toe_R_Bend
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_Foot_Space_group/TF_Scout_RigV02:Cntrl_R_Foot_group/TF_Scout_RigV02:Cntrl_R_Foot/TF_Scout_RigV02:Foot_Rotations_group
+          1/TF_Scout_RigV02:Toe_R_Pivot/TF_Scout_RigV02:Ball_R_Pivot/TF_Scout_RigV02:Bank_R_Left/TF_Scout_RigV02:Bank_R_Right/TF_Scout_RigV02:Heel_R_Pivot/TF_Scout_RigV02:Toe_R_Bend/TF_Scout_RigV02:ikh_R_Toe
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_PV_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Cntrl_group/TF_Scout_RigV02:WS_group/TF_Scout_RigV02:Cntrl_Legs_group/TF_Scout_RigV02:R_IK_Leg_group/TF_Scout_RigV02:Cntrl_R_PV_Leg_group/TF_Scout_RigV02:Cntrl_R_PV_Leg
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_ArmDist_grp
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_ArmDist_grp/TF_Scout_RigV02:ikh_L_ArmDistEnd_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_ArmDist_grp/TF_Scout_RigV02:ikh_L_ArmDistStart_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_LegDist_grp
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_LegDist_grp/TF_Scout_RigV02:ikh_L_LegDistEnd_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_L_LegDist_grp/TF_Scout_RigV02:ikh_L_LegDistStart_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_ArmDist_grp
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_ArmDist_grp/TF_Scout_RigV02:ikh_R_ArmDistEnd_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_ArmDist_grp/TF_Scout_RigV02:ikh_R_ArmDistStart_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_LegDist_grp
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_LegDist_grp/TF_Scout_RigV02:ikh_R_LegDistEnd_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_Dist_group/TF_Scout_RigV02:ikh_R_LegDist_grp/TF_Scout_RigV02:ikh_R_LegDistStart_loc
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_L_Foot_Hips
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_L_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_L_Hand_group/TF_Scout_RigV02:loc_L_Hand_Head
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_L_Hand_group/TF_Scout_RigV02:loc_L_Hand_Hips
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_L_Hand_group/TF_Scout_RigV02:loc_L_Hand_Shoulders
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_R_Foot_Hips
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_R_Hand_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_R_Hand_group/TF_Scout_RigV02:loc_R_Hand_Head
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_R_Hand_group/TF_Scout_RigV02:loc_R_Hand_Hips
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:loc_SpaceSwitch_group/TF_Scout_RigV02:loc_R_Hand_group/TF_Scout_RigV02:loc_R_Hand_Shoulders
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:spine_IK_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:spine_IK_group/TF_Scout_RigV02:curve_spine
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:DO_NOT_TOUCH/TF_Scout_RigV02:spine_IK_group/TF_Scout_RigV02:ikh_Spine
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Index_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Index_01/TF_Scout_RigV02:bn_L_Index_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Index_01/TF_Scout_RigV02:bn_L_Index_02/TF_Scout_RigV02:bn_L_Index_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Index_01/TF_Scout_RigV02:bn_L_Index_02/TF_Scout_RigV02:bn_L_Index_03/TF_Scout_RigV02:be_L_Index_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Mid_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Mid_01/TF_Scout_RigV02:bn_L_Mid_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Mid_01/TF_Scout_RigV02:bn_L_Mid_02/TF_Scout_RigV02:bn_L_Mid_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Mid_01/TF_Scout_RigV02:bn_L_Mid_02/TF_Scout_RigV02:bn_L_Mid_03/TF_Scout_RigV02:be_L_Mid_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Pinky_00
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Pinky_00/TF_Scout_RigV02:bn_L_Pinky_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Pinky_00/TF_Scout_RigV02:bn_L_Pinky_01/TF_Scout_RigV02:bn_L_Pinky_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Pinky_00/TF_Scout_RigV02:bn_L_Pinky_01/TF_Scout_RigV02:bn_L_Pinky_02/TF_Scout_RigV02:bn_L_Pinky_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Pinky_00/TF_Scout_RigV02:bn_L_Pinky_01/TF_Scout_RigV02:bn_L_Pinky_02/TF_Scout_RigV02:bn_L_Pinky_03/TF_Scout_RigV02:be_L_Pinky_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Ring_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Ring_01/TF_Scout_RigV02:bn_L_Ring_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Ring_01/TF_Scout_RigV02:bn_L_Ring_02/TF_Scout_RigV02:bn_L_Ring_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Ring_01/TF_Scout_RigV02:bn_L_Ring_02/TF_Scout_RigV02:bn_L_Ring_03/TF_Scout_RigV02:be_L_Ring_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Thumb_00
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Thumb_00/TF_Scout_RigV02:bn_L_Thumb_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Thumb_00/TF_Scout_RigV02:bn_L_Thumb_01/TF_Scout_RigV02:bn_L_Thumb_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Thumb_00/TF_Scout_RigV02:bn_L_Thumb_01/TF_Scout_RigV02:bn_L_Thumb_02/TF_Scout_RigV02:bn_L_Thumb_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:bn_L_Shoulder/TF_Scout_RigV02:bn_L_Elbow/TF_Scout_RigV02:bn_L_Forearm/TF_Scout_RigV02:bn_L_Wrist/TF_Scout_RigV02:bn_L_Thumb_00/TF_Scout_RigV02:bn_L_Thumb_01/TF_Scout_RigV02:bn_L_Thumb_02/TF_Scout_RigV02:bn_L_Thumb_03/TF_Scout_RigV02:be_L_Thumb_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_FK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_FK_Shoulder/TF_Scout_RigV02:jnt_L_FK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_FK_Shoulder/TF_Scout_RigV02:jnt_L_FK_Elbow/TF_Scout_RigV02:jnt_L_FK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_IK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_IK_Shoulder/TF_Scout_RigV02:jnt_L_IK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_L_Clavicle/TF_Scout_RigV02:jnt_L_IK_Shoulder/TF_Scout_RigV02:jnt_L_IK_Elbow/TF_Scout_RigV02:jnt_L_IK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Index_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Index_01/TF_Scout_RigV02:bn_R_Index_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Index_01/TF_Scout_RigV02:bn_R_Index_02/TF_Scout_RigV02:bn_R_Index_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Index_01/TF_Scout_RigV02:bn_R_Index_02/TF_Scout_RigV02:bn_R_Index_03/TF_Scout_RigV02:be_R_Index_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Mid_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Mid_01/TF_Scout_RigV02:bn_R_Mid_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Mid_01/TF_Scout_RigV02:bn_R_Mid_02/TF_Scout_RigV02:bn_R_Mid_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Mid_01/TF_Scout_RigV02:bn_R_Mid_02/TF_Scout_RigV02:bn_R_Mid_03/TF_Scout_RigV02:be_R_Mid_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Pinky_00
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Pinky_00/TF_Scout_RigV02:bn_R_Pinky_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Pinky_00/TF_Scout_RigV02:bn_R_Pinky_01/TF_Scout_RigV02:bn_R_Pinky_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Pinky_00/TF_Scout_RigV02:bn_R_Pinky_01/TF_Scout_RigV02:bn_R_Pinky_02/TF_Scout_RigV02:bn_R_Pinky_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Pinky_00/TF_Scout_RigV02:bn_R_Pinky_01/TF_Scout_RigV02:bn_R_Pinky_02/TF_Scout_RigV02:bn_R_Pinky_03/TF_Scout_RigV02:be_R_Pinky_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Ring_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Ring_01/TF_Scout_RigV02:bn_R_Ring_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Ring_01/TF_Scout_RigV02:bn_R_Ring_02/TF_Scout_RigV02:bn_R_Ring_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Ring_01/TF_Scout_RigV02:bn_R_Ring_02/TF_Scout_RigV02:bn_R_Ring_03/TF_Scout_RigV02:be_R_Ring_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Thumb_00
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Thumb_00/TF_Scout_RigV02:bn_R_Thumb_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Thumb_00/TF_Scout_RigV02:bn_R_Thumb_01/TF_Scout_RigV02:bn_R_Thumb_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Thumb_00/TF_Scout_RigV02:bn_R_Thumb_01/TF_Scout_RigV02:bn_R_Thumb_02/TF_Scout_RigV02:bn_R_Thumb_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:bn_R_Shoulder/TF_Scout_RigV02:bn_R_Elbow/TF_Scout_RigV02:bn_R_Forearm/TF_Scout_RigV02:bn_R_Wrist/TF_Scout_RigV02:bn_R_Thumb_00/TF_Scout_RigV02:bn_R_Thumb_01/TF_Scout_RigV02:bn_R_Thumb_02/TF_Scout_RigV02:bn_R_Thumb_03/TF_Scout_RigV02:be_R_Thumb_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_FK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_FK_Shoulder/TF_Scout_RigV02:jnt_R_FK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_FK_Shoulder/TF_Scout_RigV02:jnt_R_FK_Elbow/TF_Scout_RigV02:jnt_R_FK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_IK_Shoulder
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_IK_Shoulder/TF_Scout_RigV02:jnt_R_IK_Elbow
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_R_Clavicle/TF_Scout_RigV02:jnt_R_IK_Shoulder/TF_Scout_RigV02:jnt_R_IK_Elbow/TF_Scout_RigV02:jnt_R_IK_Wrist
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01/TF_Scout_RigV02:bn_Spine_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01/TF_Scout_RigV02:bn_Spine_02/TF_Scout_RigV02:bn_Spine_03
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01/TF_Scout_RigV02:bn_Spine_02/TF_Scout_RigV02:bn_Spine_03/TF_Scout_RigV02:bn_Spine_04
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01/TF_Scout_RigV02:bn_Spine_02/TF_Scout_RigV02:bn_Spine_03/TF_Scout_RigV02:bn_Spine_04/TF_Scout_RigV02:bn_Spine_05
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:bn_Spine_01/TF_Scout_RigV02:bn_Spine_02/TF_Scout_RigV02:bn_Spine_03/TF_Scout_RigV02:bn_Spine_04/TF_Scout_RigV02:bn_Spine_05/TF_Scout_RigV02:bn_Spine_06
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Bag_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:bn_L_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:bn_L_Hip/TF_Scout_RigV02:bn_L_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:bn_L_Hip/TF_Scout_RigV02:bn_L_Knee/TF_Scout_RigV02:bn_L_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:bn_L_Hip/TF_Scout_RigV02:bn_L_Knee/TF_Scout_RigV02:bn_L_Ankle/TF_Scout_RigV02:bn_L_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:bn_L_Hip/TF_Scout_RigV02:bn_L_Knee/TF_Scout_RigV02:bn_L_Ankle/TF_Scout_RigV02:bn_L_Ball/TF_Scout_RigV02:be_L_Toe
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_FK_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_FK_Hip/TF_Scout_RigV02:jnt_L_FK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_FK_Hip/TF_Scout_RigV02:jnt_L_FK_Knee/TF_Scout_RigV02:jnt_L_FK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_FK_Hip/TF_Scout_RigV02:jnt_L_FK_Knee/TF_Scout_RigV02:jnt_L_FK_Ankle/TF_Scout_RigV02:jnt_L_FK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_FK_Hip/TF_Scout_RigV02:jnt_L_FK_Knee/TF_Scout_RigV02:jnt_L_FK_Ankle/TF_Scout_RigV02:jnt_L_FK_Ball/TF_Scout_RigV02:be_L_Toe
+          1
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_IK_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_IK_Hip/TF_Scout_RigV02:jnt_L_IK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_IK_Hip/TF_Scout_RigV02:jnt_L_IK_Knee/TF_Scout_RigV02:jnt_L_IK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_IK_Hip/TF_Scout_RigV02:jnt_L_IK_Knee/TF_Scout_RigV02:jnt_L_IK_Ankle/TF_Scout_RigV02:jnt_L_IK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_L_Leg_group/TF_Scout_RigV02:jnt_L_IK_Hip/TF_Scout_RigV02:jnt_L_IK_Knee/TF_Scout_RigV02:jnt_L_IK_Ankle/TF_Scout_RigV02:jnt_L_IK_Ball/TF_Scout_RigV02:be_L_Toe
+          2
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:be_Head_nub
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:fbn_Jaw_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:fbn_Jaw_01/TF_Scout_RigV02:be_Jaw_nub
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:fbn_Jaw_01/TF_Scout_RigV02:tbn_01
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:fbn_Jaw_01/TF_Scout_RigV02:tbn_01/TF_Scout_RigV02:tbn_02
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:jnt_L_Eye
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_Neck_group/TF_Scout_RigV02:fbn_Neck_01/TF_Scout_RigV02:fbn_Head_01/TF_Scout_RigV02:jnt_R_Eye
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:bn_R_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:bn_R_Hip/TF_Scout_RigV02:bn_R_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:bn_R_Hip/TF_Scout_RigV02:bn_R_Knee/TF_Scout_RigV02:bn_R_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:bn_R_Hip/TF_Scout_RigV02:bn_R_Knee/TF_Scout_RigV02:bn_R_Ankle/TF_Scout_RigV02:bn_R_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:bn_R_Hip/TF_Scout_RigV02:bn_R_Knee/TF_Scout_RigV02:bn_R_Ankle/TF_Scout_RigV02:bn_R_Ball/TF_Scout_RigV02:be_R_Toe
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_FK_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_FK_Hip/TF_Scout_RigV02:jnt_R_FK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_FK_Hip/TF_Scout_RigV02:jnt_R_FK_Knee/TF_Scout_RigV02:jnt_R_FK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_FK_Hip/TF_Scout_RigV02:jnt_R_FK_Knee/TF_Scout_RigV02:jnt_R_FK_Ankle/TF_Scout_RigV02:jnt_R_FK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_FK_Hip/TF_Scout_RigV02:jnt_R_FK_Knee/TF_Scout_RigV02:jnt_R_FK_Ankle/TF_Scout_RigV02:jnt_R_FK_Ball/TF_Scout_RigV02:be_R_Toe
+          1
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_IK_Hip
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_IK_Hip/TF_Scout_RigV02:jnt_R_IK_Knee
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_IK_Hip/TF_Scout_RigV02:jnt_R_IK_Knee/TF_Scout_RigV02:jnt_R_IK_Ankle
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_IK_Hip/TF_Scout_RigV02:jnt_R_IK_Knee/TF_Scout_RigV02:jnt_R_IK_Ankle/TF_Scout_RigV02:jnt_R_IK_Ball
+        weight: 1
+      - path: TF_Scout_RigV02:ScoutRig_group/TF_Scout_RigV02:World_CTRL/TF_Scout_RigV02:Jnt_group/TF_Scout_RigV02:jnt_R_Leg_group/TF_Scout_RigV02:jnt_R_IK_Hip/TF_Scout_RigV02:jnt_R_IK_Knee/TF_Scout_RigV02:jnt_R_IK_Ankle/TF_Scout_RigV02:jnt_R_IK_Ball/TF_Scout_RigV02:be_R_Toe
+          2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
