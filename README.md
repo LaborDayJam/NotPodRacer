@@ -4,7 +4,6 @@ Product of the Otronicon SenseTheJam game jam.
 Jump into a jetpod and speed your way through the lap to achieve the best time! 
 
 ##Controls
-Keyboard
 
 Move Left - A, Left Arrow, Left Mouse Button
 
