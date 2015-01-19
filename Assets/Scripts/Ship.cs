@@ -63,7 +63,6 @@ public class Ship : MonoBehaviour {
 		leftOutput = Mathf.Clamp( leftOutput - drag * Time.deltaTime, 0, max_output);
 		rightOutput = Mathf.Clamp( rightOutput - drag  * Time.deltaTime, 0 ,max_output);	
 #endif
-		
 		direction = new Vector3 (Mathf.Clamp(rightOutput - leftOutput, -directionXClamp, directionXClamp) , 0, isThrusting);
 		
 		if (isThrusting == 1)
