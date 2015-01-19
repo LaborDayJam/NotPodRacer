@@ -24,9 +24,7 @@ public class RaceController : MonoBehaviour
 	
 	public GameObject [] lights;
 	public GameObject    lightHolder;
-	
-	float time = 0;
-	
+
 	public GameObject rsInputObject;
 	private InputManager inputManager;
 
@@ -37,7 +35,9 @@ public class RaceController : MonoBehaviour
 	private RaceState lastState;
 	private bool raceStart = false;
 	private int lightIndex = 0;
-	
+
+	TimeManager timeManager;
+
 	public static int GetState
 	{
 		get{return (int)raceState;}
@@ -49,6 +49,7 @@ public class RaceController : MonoBehaviour
 		get{return canLap;}
 		set{canLap = value;}
 	}
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -57,6 +58,8 @@ public class RaceController : MonoBehaviour
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 		inputManager = InputManager.Instance;
+
+		timeManager = GetComponent<TimeManager> ();
 	}
 	
 	// Update is called once per frame
@@ -67,14 +70,12 @@ public class RaceController : MonoBehaviour
 			OnUpdate();
 		}
 		
-		if(Input.GetKeyDown(KeyCode.D))
-			raceState = RaceState.COUNTDOWN;
-		else if(Input.GetKeyDown(KeyCode.Escape))
+		if(Input.GetKeyDown(KeyCode.Escape))
 			Application.Quit();
 		else if(Input.GetKeyDown(KeyCode.R))
 			Application.LoadLevel(Application.loadedLevel);
 
-		if(raceState == RaceState.PRERACE && inputManager.leftOutputNormalized != 0 && inputManager.rightOutputNormalized != 0)
+		if(raceState == RaceState.PRERACE && (inputManager.leftOutputNormalized != 0 || inputManager.rightOutputNormalized != 0))
 			raceState = RaceState.COUNTDOWN;
 	
 		if(lastState != raceState)
@@ -90,7 +91,6 @@ public class RaceController : MonoBehaviour
 		if(currentLap < lapsCount && canLap)
 		{
 			canLap = false;
-			
 			if(Newlap != null)
 				Newlap();
 		}
@@ -98,7 +98,6 @@ public class RaceController : MonoBehaviour
 		{
 			raceState = RaceState.FINISHED;
 			StartCoroutine("EndRace");
-
 			/// AUDIO CREDIT CURT VICKTOR BRYANT
 		}
 	}
@@ -114,7 +113,6 @@ public class RaceController : MonoBehaviour
 		{
 			case RaceState.COUNTDOWN:
 			{
-		
 				StartCoroutine("StartRace");
 				break;
 			}
@@ -123,7 +121,7 @@ public class RaceController : MonoBehaviour
 	}
 	IEnumerator EndRace()
 	{
-		StopCoroutine ("CR_TrackTime");
+		timeManager.StopTime();
 		yield return new WaitForSeconds(5);
 		Application.LoadLevel(0);
 	}
@@ -143,18 +141,9 @@ public class RaceController : MonoBehaviour
 		}
 		raceState = RaceState.RACING;
 		lightHolder.SetActive(false);
-		StartCoroutine ("CR_TrackTime");
+		timeManager.StartTime ();
 	}
 
-	IEnumerator CR_TrackTime()
-	{
-		while (true) {
-			time += Time.deltaTime;
-			timerText.text = time.ToString();
-			yield return 0;
-				}
-	}
-	
 	void NextLight()
 	{
 		lights[lightIndex].SetActive(true);
