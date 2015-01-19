@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: d4149ebad2756cc478fc0faa33e41134
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: engine
+    100002: flap_L
+    100004: flap_L 1
+    100006: leftEngine
+    100008: leftEngine 1
+    100010: leftEngine 2
+    100012: leftEngine1
+    100014: mainCraft
+    100016: //RootNode
+    100018: thruster_1
+    100020: thruster_1 1
+    100022: thruster_2
+    100024: thruster_2 1
+    100026: thruster_3
+    100028: thruster_3 1
+    100030: vent_1
+    100032: vent_1 1
+    100034: vent_2
+    100036: vent_2 1
+    100038: vent_3
+    100040: vent_3 1
+    100042: vent_4
+    100044: vent_4 1
+    100046: vents
+    100048: vents 1
+    400000: engine
+    400002: flap_L
+    400004: flap_L 1
+    400006: leftEngine
+    400008: leftEngine 1
+    400010: leftEngine 2
+    400012: leftEngine1
+    400014: mainCraft
+    400016: //RootNode
+    400018: thruster_1
+    400020: thruster_1 1
+    400022: thruster_2
+    400024: thruster_2 1
+    400026: thruster_3
+    400028: thruster_3 1
+    400030: vent_1
+    400032: vent_1 1
+    400034: vent_2
+    400036: vent_2 1
+    400038: vent_3
+    400040: vent_3 1
+    400042: vent_4
+    400044: vent_4 1
+    400046: vents
+    400048: vents 1
+    2300000: engine
+    2300002: flap_L
+    2300004: flap_L 1
+    2300006: leftEngine 1
+    2300008: leftEngine 2
+    2300010: mainCraft
+    2300012: thruster_1
+    2300014: thruster_1 1
+    2300016: thruster_2
+    2300018: thruster_2 1
+    2300020: thruster_3
+    2300022: thruster_3 1
+    2300024: vent_1
+    2300026: vent_1 1
+    2300028: vent_2
+    2300030: vent_2 1
+    2300032: vent_3
+    2300034: vent_3 1
+    2300036: vent_4
+    2300038: vent_4 1
+    3300000: engine
+    3300002: flap_L
+    3300004: flap_L 1
+    3300006: leftEngine 1
+    3300008: leftEngine 2
+    3300010: mainCraft
+    3300012: thruster_1
+    3300014: thruster_1 1
+    3300016: thruster_2
+    3300018: thruster_2 1
+    3300020: thruster_3
+    3300022: thruster_3 1
+    3300024: vent_1
+    3300026: vent_1 1
+    3300028: vent_2
+    3300030: vent_2 1
+    3300032: vent_3
+    3300034: vent_3 1
+    3300036: vent_4
+    3300038: vent_4 1
+    4300000: vent_4
+    4300002: vent_3
+    4300004: vent_2
+    4300006: vent_1
+    4300008: thruster_1
+    4300010: leftEngine
+    4300012: flap_L
+    4300014: thruster_2
+    4300016: thruster_3
+    4300018: mainCraft
+    4300020: engine
+    4300022: vent_4
+    4300024: vent_3
+    4300026: vent_2
+    4300028: vent_1
+    4300030: thruster_1
+    4300032: leftEngine
+    4300034: flap_L
+    4300036: thruster_2
+    4300038: thruster_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

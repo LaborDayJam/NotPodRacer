@@ -14,20 +14,26 @@ public class RaceController : MonoBehaviour
 	};
 
 	public static RaceState raceState;
-
+	
+	
 	public delegate void RaceControllerUpdate();
 	public static event RaceControllerUpdate OnUpdate;
 	public static event RaceControllerUpdate Newlap;
 	
-
+	public GameObject [] lights;
+	public GameObject    lightHolder;
 	
-
-
+	
+	
 	
 	public bool canLap = true;
 	public int 	lapsCount = 0;
 	public int  currentLap = 0;
-
+	
+	private RaceState lastState;
+	private bool raceStart = false;
+	private int lightIndex = 0;
+	
 	public static int GetState
 	{
 		get{return (int)raceState;}
@@ -44,6 +50,7 @@ public class RaceController : MonoBehaviour
 	{
 
 		raceState = RaceState.PRERACE;
+		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 	}
@@ -55,7 +62,19 @@ public class RaceController : MonoBehaviour
 		{
 			OnUpdate();
 		}
-		SwitchState();
+		
+		if(Input.GetKeyDown(KeyCode.D))
+			raceState = RaceState.COUNTDOWN;
+		else if(Input.GetKeyDown(KeyCode.Escape))
+			Application.Quit();
+		else if(Input.GetKeyDown(KeyCode.R))
+			Application.LoadLevel(Application.loadedLevel);
+
+		if(lastState != raceState)
+		{
+			SwitchState();
+			lastState = raceState;
+		}
 	}
 
 	void UpdateLapCount()
@@ -81,6 +100,40 @@ public class RaceController : MonoBehaviour
 
 	void SwitchState()
 	{
-
+		switch(raceState)
+		{
+			case RaceState.COUNTDOWN:
+			{
+		
+				StartCoroutine("StartRace");
+				break;
+			}
+			
+		}
+	}
+	
+	IEnumerator StartRace()
+	{
+		if(!raceStart)
+		{
+			AudioManager.instance.PlayOneShot(1, lightHolder.transform.position);
+			raceStart = true;
+		
+		}
+		
+		while(lightIndex < lights.Length)
+		{
+			NextLight();
+			yield return new WaitForSeconds(.95f);
+			
+		}
+		raceState = RaceState.RACING;
+		lightHolder.SetActive(false);
+	}
+	
+	void NextLight()
+	{
+		lights[lightIndex].SetActive(true);
+		lightIndex++;			 	
 	}
 }

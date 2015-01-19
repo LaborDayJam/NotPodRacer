@@ -99,6 +99,7 @@ public class ShipPhysics : MonoBehaviour {
 
 			yield return 0;	
 		}
+		Debug.Log ("YEA");
 		StartCoroutine (CR_UpdateLoop ());
 		StartCoroutine (CR_GroundClamp ());
 		StartCoroutine (CR_SlerpToTargetHeightPosition ());
