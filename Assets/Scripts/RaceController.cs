@@ -28,7 +28,6 @@ public class RaceController : MonoBehaviour
 	float time = 0;
 	
 	public GameObject rsInputObject;
-	//TODO private RSInputAdapter rsInput;
 	private InputManager inputManager;
 
 	public bool canLap = true;
@@ -51,13 +50,12 @@ public class RaceController : MonoBehaviour
 		set{canLap = value;}
 	}
 	// Use this for initialization
-	void Awake () 
+	void Start () 
 	{
 		raceState = RaceState.PRERACE;
 		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
-		// TODO rsInput = rsInputObject.GetComponent<RSInputAdapter>();
 		inputManager = InputManager.Instance;
 	}
 	
@@ -133,9 +131,8 @@ public class RaceController : MonoBehaviour
 	{
 		if(!raceStart)
 		{
-			AudioManager.instance.PlayOneShot(1, lightHolder.transform.position);
+			AudioManager.instance.PlayOneShot(0, lightHolder.transform.position);
 			raceStart = true;
-		
 		}
 		
 		while(lightIndex < lights.Length)

@@ -37,7 +37,7 @@ public class ShipPhysics : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		targetHeightPosition = transform.position;
-		StartCoroutine (CR_WaitForFirstThrust ());
+		StartCoroutine (CR_WaitForRaceStart ());
 
 		inputManager = InputManager.Instance;
 		pilotAnimation = GetComponentInChildren<PilotAnimation> ();
@@ -103,14 +103,11 @@ public class ShipPhysics : MonoBehaviour {
 		}
 	}
 
-	IEnumerator CR_WaitForFirstThrust()
+	IEnumerator CR_WaitForRaceStart()
 	{
-		while (!isThrusting && RaceController.GetState != 2) {
-			if (leftOutput != 0 || rightOutput != 0)
-				isThrusting = true;
+		while (RaceController.GetState != 2) {
 			yield return 0;	
 		}
-		Debug.Log ("YEA");
 		StartCoroutine (CR_UpdateLoop ());
 		StartCoroutine (CR_GroundClamp ());
 		StartCoroutine (CR_SlerpToTargetHeightPosition ());
