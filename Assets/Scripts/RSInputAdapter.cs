@@ -1,14 +1,27 @@
-﻿using UnityEngine;
+﻿//#define INPUT_REALSENSE
+#if INPUT_REALSENSE
+
+using UnityEngine;
 using System.Collections;
 
 public class RSInputAdapter : MonoBehaviour {
-#if !UNITY_EDITOR_OSX
+
+	private RSInputAdapter instance;
+
 	public ThrusterTracker leftHand;
 	public ThrusterTracker rightHand;
-#endif
 
 	public float leftOutputNormalized;
 	public float rightOutputNormalized;
+
+	void Awake()
+	{
+		if(instance == null)
+			instance = this;
+		else
+			Destroy(gameObject);
+
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +37,6 @@ public class RSInputAdapter : MonoBehaviour {
 	{
 		while(true)
 		{
-#if !UNITY_EDITOR_OSX
 			if(leftHand.isTracking)
 				leftOutputNormalized = (leftHand.maxDepth - leftHand.handDepth)/(leftHand.maxDepth - leftHand.minDepth);
 			else
@@ -34,9 +46,9 @@ public class RSInputAdapter : MonoBehaviour {
 				rightOutputNormalized = (rightHand.maxDepth - rightHand.handDepth)/(rightHand.maxDepth - rightHand.minDepth);
 			else
 				rightOutputNormalized = 0;
-#endif
+
 			yield return 0;
 		}
-
 	}
 }
+#endif
