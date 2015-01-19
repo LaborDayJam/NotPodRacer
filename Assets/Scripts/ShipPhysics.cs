@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ShipPhysics : MonoBehaviour {
 
+	PilotAnimation pilotAnimation;
 	//Movement
 	//public float max_accel_rate = 200;
 	public float max_speed = 200;
@@ -20,20 +21,15 @@ public class ShipPhysics : MonoBehaviour {
 
 	bool isThrusting;
 
-	public Transform leftThruster;
-	public Transform rightThruster;
-
-	public RSInputAdapter rsInputAdapter;
-
-	float openingSpeedBoost = 100;
-	
 	public Transform[] clampPoints;
 	float clampIntervalSeconds = .5f;
 
 	public float turnFactor = 300;
 
 	Vector3 targetHeightPosition;
-		
+
+	InputManager inputManager;
+
 	public Animation leftHand;
 	public Animation rightHand;
 
@@ -42,58 +38,52 @@ public class ShipPhysics : MonoBehaviour {
 	void Start () {
 		targetHeightPosition = transform.position;
 		StartCoroutine (CR_WaitForFirstThrust ());
+
+		inputManager = InputManager.Instance;
+		pilotAnimation = GetComponentInChildren<PilotAnimation> ();
 	}
 
-	void UpdateHandAnimation(Animation hand, float output)
-	{
-		AnimationState targetAnim;
-		string animName;
-		if (hand == leftHand) {
-			animName = "leftControl";
-			targetAnim = leftHand [animName];
-		} else {
-			animName = "rightControl";
-			targetAnim = rightHand [animName];
-		}
-		targetAnim.time = output ;
-		targetAnim.speed = 0;
-		hand.Play (animName);
-	}
-
-	// Update is called once per frame
 	void HandleUpdate () {
 		isThrusting = false;
 
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-			isThrusting = true;
-		}
-		else if(rsInputAdapter && rsInputAdapter.leftOutputNormalized > 0)
-		{
-			leftOutput = rsInputAdapter.leftOutputNormalized;
-			isThrusting = true;
+		switch (inputManager.inputType) {
+			case InputManager.INPUT_TYPE.KEYBOARD:
+			{
+				if(inputManager.leftOutputNormalized != 0) {
+					leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+					isThrusting = true;
+				}else
+					leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
 
-		}
-		else
-			leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-		
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-			isThrusting = true;
-		}
-		else if(rsInputAdapter && rsInputAdapter.leftOutputNormalized > 0)
-		{
-			rightOutput = rsInputAdapter.rightOutputNormalized;		
-			isThrusting = true;
+				if(inputManager.rightOutputNormalized != 0) {
+					rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+					isThrusting = true;
+				}else
+					rightOutput = Mathf.Clamp(rightOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+			}break;
+			case InputManager.INPUT_TYPE.MOUSE:
+			{
 
+			}break;
+			case InputManager.INPUT_TYPE.REALSENSE:
+			{
+				if(inputManager.leftOutputNormalized > 0)
+				{
+					leftOutput = inputManager.leftOutputNormalized;
+					isThrusting = true;
+				}
+				if(inputManager.rightOutputNormalized > 0)
+				{
+					rightOutput = inputManager.rightOutputNormalized;		
+					isThrusting = true;
+				}
+			}break;
 		}
-		else 
-			rightOutput = Mathf.Clamp(rightOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-		//Debug.Log (leftHand.animation.name);
-		//
 
-		UpdateHandAnimation(leftHand, leftOutput);
-		UpdateHandAnimation(rightHand, rightOutput);
+		//Animation
+		pilotAnimation.UpdateHandAnimation (0, leftOutput);
+		pilotAnimation.UpdateHandAnimation (1, rightOutput);
+
 		//Turning
 		if( ( leftOutput - rightOutput ) != 0)
 			rigidbody.AddRelativeTorque(0, ( leftOutput - rightOutput ) * turnFactor, 0);
@@ -103,7 +93,6 @@ public class ShipPhysics : MonoBehaviour {
 			float acceleration = (leftOutput + rightOutput) * .5f * accelerationRate * Time.deltaTime;
 			rigidbody.velocity += transform.forward * (acceleration );
 		} 
-	
 	}
 
 	IEnumerator CR_UpdateLoop()
@@ -117,30 +106,17 @@ public class ShipPhysics : MonoBehaviour {
 	IEnumerator CR_WaitForFirstThrust()
 	{
 		while (!isThrusting && RaceController.GetState != 2) {
-#if !UNITY_EDITOR_OSX
-			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || rsInputAdapter.leftHand.isTracking || rsInputAdapter.rightHand.isTracking)
-#else
-			if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-#endif
-					isThrusting = true;
-
+			if (leftOutput != 0 || rightOutput != 0)
+				isThrusting = true;
 			yield return 0;	
 		}
 		Debug.Log ("YEA");
 		StartCoroutine (CR_UpdateLoop ());
 		StartCoroutine (CR_GroundClamp ());
 		StartCoroutine (CR_SlerpToTargetHeightPosition ());
-		//StartCoroutine (CR_OpeningSpeedBurst ());
 	}
 
-	IEnumerator CR_OpeningSpeedBurst()
-	{
-		openingSpeedBoost = 100;
-		while (openingSpeedBoost > 0) {
-			openingSpeedBoost -= accelerationRate * Time.deltaTime;
-			yield return 0;
-		}
-	}
+#region GROUND_CLMAP
 
 	//TODO add masking to ground clamp check
 	IEnumerator CR_GroundClamp()
@@ -194,5 +170,6 @@ public class ShipPhysics : MonoBehaviour {
 			yield return 0;
 		}
 	}
+#endregion
 }
 	

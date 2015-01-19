@@ -1,5 +1,7 @@
-﻿
-#if !UNITY_EDITOR_OSX
+﻿//#define INPUT_REALSENSE
+
+#if INPUT_REALSENSE 
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;

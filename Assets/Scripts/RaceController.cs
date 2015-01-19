@@ -28,7 +28,8 @@ public class RaceController : MonoBehaviour
 	float time = 0;
 	
 	public GameObject rsInputObject;
-	private RSInputAdapter rsInput;
+	//TODO private RSInputAdapter rsInput;
+	private InputManager inputManager;
 
 	public bool canLap = true;
 	public int 	lapsCount = 0;
@@ -56,8 +57,8 @@ public class RaceController : MonoBehaviour
 		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
-		rsInput = rsInputObject.GetComponent<RSInputAdapter>();
-
+		// TODO rsInput = rsInputObject.GetComponent<RSInputAdapter>();
+		inputManager = InputManager.Instance;
 	}
 	
 	// Update is called once per frame
@@ -75,7 +76,7 @@ public class RaceController : MonoBehaviour
 		else if(Input.GetKeyDown(KeyCode.R))
 			Application.LoadLevel(Application.loadedLevel);
 
-		if(raceState == RaceState.PRERACE && rsInput.leftHand.isTracking && rsInput.rightHand.isTracking)
+		if(raceState == RaceState.PRERACE && inputManager.leftOutputNormalized != 0 && inputManager.rightOutputNormalized != 0)
 			raceState = RaceState.COUNTDOWN;
 	
 		if(lastState != raceState)
