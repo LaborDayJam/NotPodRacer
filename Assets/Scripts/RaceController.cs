@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class RaceController : MonoBehaviour 
@@ -14,7 +15,8 @@ public class RaceController : MonoBehaviour
 	};
 
 	public static RaceState raceState;
-	
+
+	public Text timerText;
 	
 	public delegate void RaceControllerUpdate();
 	public static event RaceControllerUpdate OnUpdate;
@@ -23,7 +25,7 @@ public class RaceController : MonoBehaviour
 	public GameObject [] lights;
 	public GameObject    lightHolder;
 	
-	
+	float time = 0;
 	
 	public GameObject rsInputObject;
 	private RSInputAdapter rsInput;
@@ -50,7 +52,6 @@ public class RaceController : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-
 		raceState = RaceState.PRERACE;
 		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
@@ -86,9 +87,9 @@ public class RaceController : MonoBehaviour
 
 	void UpdateLapCount()
 	{
+		currentLap++;
 		if(currentLap < lapsCount && canLap)
 		{
-			currentLap++;
 			canLap = false;
 			
 			if(Newlap != null)
@@ -97,7 +98,7 @@ public class RaceController : MonoBehaviour
 		else
 		{
 			raceState = RaceState.FINISHED;
-			StartCoroutine("EndingRacing");
+			StartCoroutine("EndRace");
 
 			/// AUDIO CREDIT CURT VICKTOR BRYANT
 		}
@@ -123,7 +124,8 @@ public class RaceController : MonoBehaviour
 	}
 	IEnumerator EndRace()
 	{
-		yield return new WaitForSeconds(3);
+		StopCoroutine ("CR_TrackTime");
+		yield return new WaitForSeconds(5);
 		Application.LoadLevel(0);
 	}
 	IEnumerator StartRace()
@@ -143,6 +145,16 @@ public class RaceController : MonoBehaviour
 		}
 		raceState = RaceState.RACING;
 		lightHolder.SetActive(false);
+		StartCoroutine ("CR_TrackTime");
+	}
+
+	IEnumerator CR_TrackTime()
+	{
+		while (true) {
+			time += Time.deltaTime;
+			timerText.text = time.ToString();
+			yield return 0;
+				}
 	}
 	
 	void NextLight()
