@@ -49,21 +49,11 @@ public class ShipPhysics : MonoBehaviour {
 		switch (inputManager.inputType) {
 			case InputManager.INPUT_TYPE.KEYBOARD:
 			{
-				if(inputManager.leftOutputNormalized != 0) {
-					leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-					isThrusting = true;
-				}else
-					leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-
-				if(inputManager.rightOutputNormalized != 0) {
-					rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
-					isThrusting = true;
-				}else
-					rightOutput = Mathf.Clamp(rightOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+				simulatedInput();
 			}break;
 			case InputManager.INPUT_TYPE.MOUSE:
 			{
-
+				simulatedInput();
 			}break;
 			case InputManager.INPUT_TYPE.REALSENSE:
 			{
@@ -93,6 +83,21 @@ public class ShipPhysics : MonoBehaviour {
 			float acceleration = (leftOutput + rightOutput) * .5f * accelerationRate * Time.deltaTime;
 			rigidbody.velocity += transform.forward * (acceleration );
 		} 
+	}
+
+	void simulatedInput()
+	{
+		if(inputManager.leftOutputNormalized != 0) {
+			leftOutput = Mathf.Clamp(leftOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+			isThrusting = true;
+		}else
+			leftOutput = Mathf.Clamp(leftOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+		
+		if(inputManager.rightOutputNormalized != 0) {
+			rightOutput = Mathf.Clamp(rightOutput + outputRate * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
+			isThrusting = true;
+		}else
+			rightOutput = Mathf.Clamp(rightOutput - outputDrag * Time.deltaTime, 0, MAX_INDIVIDUAL_THRUST);
 	}
 
 	IEnumerator CR_UpdateLoop()
