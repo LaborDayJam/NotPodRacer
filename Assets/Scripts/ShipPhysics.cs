@@ -55,6 +55,12 @@ public class ShipPhysics : MonoBehaviour {
 			{
 				simulatedInput();
 			}break;
+			case InputManager.INPUT_TYPE.MOBILE:
+			{
+				leftOutput = inputManager.leftOutputNormalized;
+				rightOutput = inputManager.rightOutputNormalized;
+				isThrusting = true;
+			}break;
 			case InputManager.INPUT_TYPE.REALSENSE:
 			{
 				if(inputManager.leftOutputNormalized > 0)

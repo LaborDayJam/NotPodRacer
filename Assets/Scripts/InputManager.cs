@@ -5,7 +5,7 @@ using System.Collections;
 
 //NOTE This class listens for the intial input source and then only listens to that initial source
 public class InputManager : MonoBehaviour {
-	public enum INPUT_TYPE { NONE, MOUSE, KEYBOARD, REALSENSE};
+	public enum INPUT_TYPE { NONE, MOUSE, KEYBOARD, MOBILE, REALSENSE};
 
 	private static InputManager instance;
 	public static InputManager Instance { get { return instance; } }
@@ -14,6 +14,8 @@ public class InputManager : MonoBehaviour {
 
 	public float leftOutputNormalized;
 	public float rightOutputNormalized;
+
+	MobileInputAdapter mobileInputAdapter;
 
 #if INPUT_REALSENSE
 	RSInputAdapter rsInputAdapter;
@@ -28,7 +30,12 @@ public class InputManager : MonoBehaviour {
 
 	void Start()
 	{
+#if UNITY_ANDROID || UNITY_IPHONE 
+		inputType = INPUT_TYPE.MOBILE;
+		mobileInputAdapter = GetComponent<MobileInputAdapter>();
+#else
 		inputType = INPUT_TYPE.NONE;
+#endif
 	}
 
 	void ListenForKeyboardInput()
@@ -82,7 +89,6 @@ public class InputManager : MonoBehaviour {
 		#endif
 	}
 
-
 	void Update () {
 		switch(inputType)
 		{
@@ -103,6 +109,11 @@ public class InputManager : MonoBehaviour {
 			case INPUT_TYPE.REALSENSE:
 			{
 				ListenForRealSenseInput();
+			}break;
+			case INPUT_TYPE.MOBILE:
+			{
+				leftOutputNormalized = mobileInputAdapter.leftOutput;
+				rightOutputNormalized = mobileInputAdapter.rightOutput;
 			}break;
 		}
 	}
