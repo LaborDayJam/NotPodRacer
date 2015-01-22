@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 24b310e1604635946a872e57fd927182
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Cables
+    100004: Dipping Sensor
+    100006: Electronic
+    100008: Floater
+    100010: GPS
+    100012: Harbor Buoy
+    100014: //RootNode
+    100016: Lighting
+    100018: Meteorological sensor
+    100020: Radar Reflector
+    100022: Radio Antenna
+    100024: Solar Panel
+    100026: Terminal
+    100028: transformer
+    400000: Body
+    400002: Cables
+    400004: Dipping Sensor
+    400006: Electronic
+    400008: Floater
+    400010: GPS
+    400012: Harbor Buoy
+    400014: //RootNode
+    400016: Lighting
+    400018: Meteorological sensor
+    400020: Radar Reflector
+    400022: Radio Antenna
+    400024: Solar Panel
+    400026: Terminal
+    400028: transformer
+    2300000: Body
+    2300002: Cables
+    2300004: Dipping Sensor
+    2300006: Electronic
+    2300008: Floater
+    2300010: GPS
+    2300012: Lighting
+    2300014: Meteorological sensor
+    2300016: Radar Reflector
+    2300018: Radio Antenna
+    2300020: Solar Panel
+    2300022: Terminal
+    2300024: transformer
+    3300000: Body
+    3300002: Cables
+    3300004: Dipping Sensor
+    3300006: Electronic
+    3300008: Floater
+    3300010: GPS
+    3300012: Lighting
+    3300014: Meteorological sensor
+    3300016: Radar Reflector
+    3300018: Radio Antenna
+    3300020: Solar Panel
+    3300022: Terminal
+    3300024: transformer
+    4300000: Body
+    4300002: Cables
+    4300004: Dipping Sensor
+    4300006: Electronic
+    4300008: Floater
+    4300010: GPS
+    4300012: Lighting
+    4300014: Meteorological sensor
+    4300016: Radar Reflector
+    4300018: Radio Antenna
+    4300020: Solar Panel
+    4300022: Terminal
+    4300024: transformer
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
