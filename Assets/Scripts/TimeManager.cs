@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour 
 {
-
+	private GameLogic gameLogic;
+	
 	public float currentLap = 0f;
 	private float totalRaceTime = 0f;
 	private float bestLapTime = 0;
@@ -18,9 +19,10 @@ public class TimeManager : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
+		gameLogic = GameLogic.instance;
 		RaceController.OnUpdate += new RaceController.RaceControllerUpdate(UpdateTimer);
 		RaceController.Newlap += new RaceController.RaceControllerUpdate(ResetLapTime);	
-		bestLapTime = PlayerPrefs.GetFloat ("BestTime", 0);
+		bestLapTime = gameLogic.trackBestLaps[gameLogic.trackNum];
 		bestLapTimeText.text = convertTimeToFormat (bestLapTime);
 	}
 	
@@ -58,9 +60,8 @@ public class TimeManager : MonoBehaviour
 	public void StopTime()
 	{
 		StopCoroutine ("CR_TrackTime");
-		if (currentLapTime < bestLapTime || bestLapTime == 0) {
-			PlayerPrefs.SetFloat ("BestTime", currentLapTime);
-			PlayerPrefs.Save();		
+		if (currentLapTime < bestLapTime || bestLapTime == 0) 
+		{
 			bestLapTimeText.text = currentLapTimeText.text;
 		}
 	}
@@ -68,17 +69,21 @@ public class TimeManager : MonoBehaviour
 	IEnumerator CR_TrackTime()
 	{
 		bool noBestLapTime = (bestLapTime == 0) ?  true : false;
-		while (true) {
+		while (true) 
+		{
 			currentLapTime += Time.deltaTime;
 			currentLapTimeText.text = convertTimeToFormat(currentLapTime);
 
 			if(noBestLapTime)
+			{
 				bestLapTimeText.text = currentLapTimeText.text;
+				gameLogic.trackBestLaps[gameLogic.trackNum] = currentLapTime;
+			}
 			yield return 0;
 		}
 	}
 	
-	string convertTimeToFormat(float time)
+	public string convertTimeToFormat(float time)
 	{
 		string minutes = Mathf.Floor(time / 60).ToString("00");
 		string seconds = (Mathf.Floor(time) % 60).ToString("00");

@@ -12,14 +12,16 @@ public class MobileInputAdapter : MonoBehaviour {
 	public bool isTrackingLeftHand;
 	public bool isTrackingRightHand;
 
-	void Start () {
+	void Start () 
+	{
 		screenWidth = Screen.width;
 		screenHeight = Screen.height * .8f;
 		isTrackingLeftHand = false;
 		isTrackingRightHand = false;
 	}
 
-	void Update () {
+	void Update () 
+	{
 		DetectInput ();
 	}
 

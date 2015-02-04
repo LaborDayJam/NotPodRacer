@@ -17,6 +17,7 @@ public class RaceController : MonoBehaviour
 	public static RaceState raceState;
 
 	public Text timerText;
+	public Text	bestText;
 	
 	public delegate void RaceControllerUpdate();
 	public static event RaceControllerUpdate OnUpdate;
@@ -27,10 +28,10 @@ public class RaceController : MonoBehaviour
 
 	public GameObject rsInputObject;
 	private InputManager inputManager;
-
+	private GameLogic gameLogic;
 	public bool canLap = true;
 	public int 	lapsCount = 0;
-	public int  currentLap = 0;
+	public int  currentLap = -1;
 	
 	private RaceState lastState;
 	private bool raceStart = false;
@@ -51,15 +52,16 @@ public class RaceController : MonoBehaviour
 	}
 
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
 		raceState = RaceState.PRERACE;
 		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
+		gameLogic = GameLogic.instance;
+		lapsCount = gameLogic.lapCount;
 		inputManager = InputManager.Instance;
-
-		timeManager = GetComponent<TimeManager> ();
+		timeManager = GetComponent<TimeManager> ();		
 	}
 	
 	// Update is called once per frame
@@ -70,11 +72,6 @@ public class RaceController : MonoBehaviour
 			OnUpdate();
 		}
 		
-		if(Input.GetKeyDown(KeyCode.Escape))
-			Application.Quit();
-		else if(Input.GetKeyDown(KeyCode.R))
-			Application.LoadLevel(Application.loadedLevel);
-
 		if(raceState == RaceState.PRERACE && (inputManager.leftOutputNormalized != 0 || inputManager.rightOutputNormalized != 0))
 			raceState = RaceState.COUNTDOWN;
 	
@@ -88,9 +85,28 @@ public class RaceController : MonoBehaviour
 	void UpdateLapCount()
 	{
 		currentLap++;
+		
+		if(currentLap > 0)
+		{
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime;
+			gameLogic.totalTracTime = timeManager.currentLapTime;
+		}
+		else if(currentLap == 2)
+		{
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime - gameLogic.lapTimes[currentLap -2];
+			gameLogic.totalTracTime = timeManager.currentLapTime;
+		}
+		
+		else if(currentLap == 3)
+		{
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime - gameLogic.lapTimes[currentLap -3];
+			gameLogic.totalTracTime = timeManager.currentLapTime;
+		}
+		
 		if(currentLap < lapsCount && canLap)
 		{
 			canLap = false;
+						
 			if(Newlap != null)
 				Newlap();
 		}
@@ -98,7 +114,7 @@ public class RaceController : MonoBehaviour
 		{
 			raceState = RaceState.FINISHED;
 			StartCoroutine("EndRace");
-			/// AUDIO CREDIT CURT VICKTOR BRYANT
+			
 		}
 	}
 
@@ -122,8 +138,10 @@ public class RaceController : MonoBehaviour
 	IEnumerator EndRace()
 	{
 		timeManager.StopTime();
+		gameLogic.gameStarted = false;
 		yield return new WaitForSeconds(5);
-		Application.LoadLevel(0);
+		
+		Application.LoadLevel(5);
 	}
 	IEnumerator StartRace()
 	{

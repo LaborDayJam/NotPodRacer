@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
 	public GameObject SinglePanel;
 	public GameObject ChampionPanel;
 	public GameObject ExitPanel;
+	public GameObject title;
 	#endregion
 	
 	#region SinglePanel 
@@ -16,6 +17,7 @@ public class MenuController : MonoBehaviour
 	public GameObject	 trackName;
 	public GameObject    numLaps;
 	
+	private GameLogic	 gameLogic;
 	private Text 		 trackNameText;
 	private Text 		 numOfLapsText;
 	private int 		 menuNum = 0;
@@ -26,6 +28,7 @@ public class MenuController : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
+	   gameLogic = GameLogic.instance;
 	   trackNameText = trackName.GetComponent<Text>();
 	   numOfLapsText = numLaps.GetComponent<Text>();
 	}
@@ -50,8 +53,10 @@ public class MenuController : MonoBehaviour
 	{
 		if(numOfLaps > 3)
 			numOfLaps = 3;
-		else if(numOfLaps < 1)
+		else if(numOfLaps < 1 && trackNameNum != 3)
 		    numOfLaps = 1;
+		else if (trackNameNum == 3)
+			numOfLaps = 0;
 		    
 		numOfLapsText.text = numOfLaps.ToString();
 	}
@@ -65,13 +70,13 @@ public class MenuController : MonoBehaviour
 			
 		string name;
 		if(trackNameNum == 0)
-			name = "Ocean Warmup";
+			name = "Islands";
 		else if(trackNameNum == 1)
-			name = "The Islands";
+			name = "Iceland";
 		else if(trackNameNum == 2)
-			name = "Ice Peaks";
+			name = "Amazon";
 		else if(trackNameNum == 3)
-			name = "Amazon Rivers";
+			name = "Warmup";
 		else
 			name = "";
 				
@@ -90,6 +95,7 @@ public class MenuController : MonoBehaviour
 	public void SingleRaceButton()
 	{
 		MainPanel.SetActive(false);
+		title.SetActive(false);
 		SinglePanel.SetActive(true);
 		menuNum++;
 	}
@@ -118,21 +124,33 @@ public class MenuController : MonoBehaviour
 	
 	public void NumLapsL()
 	{
-		numOfLaps--;
+		if(trackNameNum != 3)
+			numOfLaps--;
+		else 
+			numOfLaps = 0;
 	}
 	
 	public void NumLapsR()
-	{
-		numOfLaps++;
+	{	
+		if(trackNameNum != 3)
+			numOfLaps++;
+		else
+			numOfLaps = 0;
 	}
 	public void StartRace()
 	{
-	
+		gameLogic.singleRace = true;
+		gameLogic.lapCount = numOfLaps;
+		gameLogic.gameStarted = true;
+		gameLogic.trackNum = trackNameNum;
+		
+		Application.LoadLevel(trackNameNum+1);
 	}
 	
 	public void BackButton()
 	{
 		SinglePanel.SetActive(false);
+		title.SetActive(true);
 		MainPanel.SetActive(true);
 		menuNum--;
 		trackNameNum = 0;
