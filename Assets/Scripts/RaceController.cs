@@ -161,7 +161,7 @@ public class RaceController : MonoBehaviour
 	IEnumerator EndRace()
 	{
 		
-		gameLogic.totalTracTime = timeManager.totalRaceTime;
+		gameLogic.totalTrackTime = timeManager.totalRaceTime;
 		timeManager.StopTime();
 		gameLogic.gameStarted = false;
 		yield return new WaitForSeconds(3);

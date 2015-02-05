@@ -79,7 +79,7 @@ public class MenuController : MonoBehaviour
 		bestTrackLapTimes = new float[3];
 		for(int i = 0; i > 3; i++)
 		{
-			bestTrackTotalTimes[i] = gameLogic.topTrackTimes[i];
+			bestTrackTotalTimes[i] = gameLogic.trackBestTimes[i];
 			bestTrackLapTimes[i] = gameLogic.lapTimes[i];
 		}
 		bestChampionshipTotalTime = gameLogic.championshipBestTime;

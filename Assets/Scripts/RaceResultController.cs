@@ -15,7 +15,11 @@ public class RaceResultController : MonoBehaviour
 	public Text			trackName;
 	public Text			lapNumber;
 	public Text			trackTotalTime;
-	
+		
+	public Text [] champBestLaps;
+	public Text [] champTrackTotals;
+	public Text    totalChampTime;
+	public Text    totalBestChampTime;	
 
 	private TimeManager timeManager;
 	private GameLogic 	gameLogic;
@@ -38,6 +42,28 @@ public class RaceResultController : MonoBehaviour
 			buttons[0].SetActive(false);
 		}
 	}
+	void SetChampInfo()
+	{
+	
+		for(int i = 0; i < 3; i++)
+		{
+			gameLogic.championshipTotalTime += gameLogic.championshipTrackTotals[i];
+			
+			
+		}
+		if(gameLogic.championshipTotalTime > gameLogic.championshipBestTime)
+		{
+			pbIcons[4].SetActive(true);
+			gameLogic.championshipBestTime = gameLogic.championshipTotalTime;
+		}
+		totalChampTime.text = timeManager.convertTimeToFormat(gameLogic.championshipTotalTime);
+		totalBestChampTime.text = timeManager.convertTimeToFormat(gameLogic.championshipBestTime);
+		for (int i= 0; i < 3; i++)
+		{
+			champBestLaps[i].text = timeManager.convertTimeToFormat(gameLogic.championshipBestLaps[i]);
+			champTrackTotals[i].text = timeManager.convertTimeToFormat(gameLogic.championshipTrackTotals[i]);
+		}
+	}
 	
 	void SetLapTimes()
 	{
@@ -46,6 +72,7 @@ public class RaceResultController : MonoBehaviour
 		for(int i = 0; i < gameLogic.lapTimes.Length; i++)
 		{
 			lapTimes[i].gameObject.SetActive(true);
+			
 			if(gameLogic.lapTimes[i] > 0)
 			{
 				
@@ -57,6 +84,11 @@ public class RaceResultController : MonoBehaviour
 				 	bestLap = i;
 				}
 				
+				if(gameLogic.lapTimes[i] > gameLogic.championshipBestLaps[gameLogic.trackNum])
+				{
+					gameLogic.championshipBestLaps[gameLogic.trackNum] = gameLogic.lapTimes[i];
+				}
+					
 			}
 			else
 				lapTimes[i].gameObject.SetActive(false);
@@ -88,23 +120,23 @@ public class RaceResultController : MonoBehaviour
 	
 	void SetTrackTime()
 	{
-		if(gameLogic.totalTracTime > gameLogic.topTrackTimes[gameLogic.trackNum])
+		if(gameLogic.totalTrackTime > gameLogic.trackBestTimes[gameLogic.trackNum])
 		{
-			gameLogic.topTrackTimes[gameLogic.trackNum] = gameLogic.totalTracTime;
+			gameLogic.trackBestTimes[gameLogic.trackNum] = gameLogic.totalTrackTime;
 			pbIcons[3].SetActive(true);
 		}
 		
 		if(!gameLogic.singleRace)
-			gameLogic.championshipTotals[gameLogic.trackNum] = gameLogic.totalTracTime;
+			gameLogic.championshipTrackTotals[gameLogic.trackNum] = gameLogic.totalTrackTime;
 			
-		trackTotalTime.text = timeManager.convertTimeToFormat(gameLogic.totalTracTime);
+		trackTotalTime.text = timeManager.convertTimeToFormat(gameLogic.totalTrackTime);
 	}
 	public void OnReset()
 	{
 		for(int i = 0; i < 3; i++)
 			gameLogic.lapTimes[i] = 0;
 		
-		gameLogic.totalTracTime = 0;	
+		gameLogic.totalTrackTime = 0;	
 		Application.LoadLevel(gameLogic.trackNum + 1);
 		
 	}
@@ -114,7 +146,7 @@ public class RaceResultController : MonoBehaviour
 		for(int i = 0; i < 3; i++)
 			gameLogic.lapTimes[i] = 0;
 		
-		gameLogic.totalTracTime = 0;
+		gameLogic.totalTrackTime = 0;
 		
 		Application.LoadLevel(0);
 	}
@@ -131,14 +163,14 @@ public class RaceResultController : MonoBehaviour
 			buttons[0].SetActive(true);
 			singlePanel.SetActive(false);
 			champPanel.SetActive(true);
-			
+			SetChampInfo();
 		}
 			
 		for(int i = 0; i < 3; i++)
 			gameLogic.lapTimes[i] = 0;
 		
 		
-		gameLogic.totalTracTime = 0;
+		gameLogic.totalTrackTime = 0;
 		Application.LoadLevel(6);
 
 	}

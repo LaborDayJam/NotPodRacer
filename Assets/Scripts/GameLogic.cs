@@ -8,9 +8,9 @@ public class GameLogic : MonoBehaviour
 	
 	
 	public float[] lapTimes;
-	public float[] championshipTotals;
-	
-	public float   singleRacetotalTime;
+	public float[] championshipTrackTotals;
+	public float[] championshipBestLaps;  
+
 	
 	public bool gameStarted;
 	public bool singleRace;
@@ -19,11 +19,11 @@ public class GameLogic : MonoBehaviour
 	public int trackNum = 0;
 	
 	#region SaveLogic Variables
-	public float[] 	topTrackTimes;
+	public float[] 	trackBestTimes;
 	public float[]  trackBestLaps;
 	public float 	championshipBestTime = 0f;
 	public float 	championshipTotalTime = 0f;
-	public float 	totalTracTime;
+	public float 	totalTrackTime;
 	#endregion
 	// Use this for initialization
 	void Awake()
@@ -47,18 +47,10 @@ public class GameLogic : MonoBehaviour
 			SetSaveInfo();
 		}
 		lapTimes = new float[3];
+		championshipBestLaps = new float[3];
+		championshipTrackTotals = new float[3];
 	}
 	
-	
-	public float ReturnRaceTotalTime()
-	{
-		for(int i = 0; i < lapCount; i++)
-		{
-			singleRacetotalTime += lapTimes[i];
-		}
-		
-		return singleRacetotalTime;
-	}
 	#region SaveLogic
 	private bool CheckFirstRun()
 	{
@@ -73,12 +65,13 @@ public class GameLogic : MonoBehaviour
 			return true;
 		}
 	}
+	
 	private void GetTopTimes()
 	{
-		topTrackTimes = new float[3];
+		trackBestTimes = new float[3];
 		trackBestLaps = new float[3];
 		 
-		topTrackTimes = PlayerPrefsX.GetFloatArray("TopTrackTimes");
+		trackBestTimes = PlayerPrefsX.GetFloatArray("TopTrackTimes");
 		trackBestLaps = PlayerPrefsX.GetFloatArray("TracksBestLaps");
 		championshipBestTime = PlayerPrefs.GetFloat("ChampionshipTime");
 	
@@ -91,18 +84,18 @@ public class GameLogic : MonoBehaviour
 	
 	private void SetSaveInfo()
 	{
-		topTrackTimes = new float[3];
+		trackBestTimes = new float[3];
 		trackBestLaps = new float[3];
 	 	
 	 	float champTime = 0;
 	 	
 	 	for(int i = 0; i < 3; i++)
 	 	{
-			topTrackTimes[i] = 0f;
+			trackBestTimes[i] = 0f;
 			trackBestLaps[i] = 0f;
 	 	}
 	 	
-		PlayerPrefsX.SetFloatArray("TopTrackTimes", topTrackTimes);
+		PlayerPrefsX.SetFloatArray("TopTrackTimes", trackBestTimes);
 		PlayerPrefsX.SetFloatArray("TracksBestLaps", trackBestLaps);
 		PlayerPrefs.SetFloat("ChampionshipTime", champTime);
 	}
