@@ -158,7 +158,7 @@ public class ShipPhysics : MonoBehaviour {
 			float collisionHeight = averageHitPoint.y;
 			//TODO orient myself to the average ground normal. Smooth transition
 			//transform.up = new Vector3 (x, y, z);
-			targetHeightPosition = new Vector3(transform.position.x, collisionHeight, transform.position.z) + transform.up * 2;
+			targetHeightPosition = new Vector3(transform.position.x, collisionHeight, transform.position.z) + transform.up * 5;
 			yield return new WaitForSeconds (clampIntervalSeconds);
 		}
 	}

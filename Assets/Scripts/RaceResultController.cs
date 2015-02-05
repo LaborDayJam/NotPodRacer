@@ -29,18 +29,15 @@ public class RaceResultController : MonoBehaviour
 	{
 		timeManager = GetComponent<TimeManager>();
 		gameLogic = GameLogic.instance;
+		
 		if(gameLogic.singleRace)
-		{
-			SetLapTimes();
-			SetRaceInformation();
 			buttons[1].SetActive(false);
-		}
 		else
-		{
-			SetLapTimes();
-			SetRaceInformation();
 			buttons[0].SetActive(false);
-		}
+	
+		SetLapTimes();
+		SetRaceInformation();
+		SetTrackTime();
 	}
 	void SetChampInfo()
 	{
@@ -67,11 +64,11 @@ public class RaceResultController : MonoBehaviour
 	
 	void SetLapTimes()
 	{
-		lapTimes = new Text[gameLogic.lapTimes.Length];
+		
 		
 		for(int i = 0; i < gameLogic.lapTimes.Length; i++)
 		{
-			lapTimes[i].gameObject.SetActive(true);
+			lapTimeObjects[i].gameObject.SetActive(true);
 			
 			if(gameLogic.lapTimes[i] > 0)
 			{
@@ -88,10 +85,10 @@ public class RaceResultController : MonoBehaviour
 				{
 					gameLogic.championshipBestLaps[gameLogic.trackNum] = gameLogic.lapTimes[i];
 				}
-					
+			 
 			}
 			else
-				lapTimes[i].gameObject.SetActive(false);
+				lapTimeObjects[i].gameObject.SetActive(false);
 		}
 		
 		if(bestLap >= 0)

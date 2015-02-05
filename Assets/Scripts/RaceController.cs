@@ -58,7 +58,7 @@ public class RaceController : MonoBehaviour
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 		raceState = RaceState.PRERACE;
 		lastState = raceState;
-		
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 	
 	void OnDestroy()

@@ -52,7 +52,7 @@ public class MobileInputAdapter : MonoBehaviour {
 
 				}
 				
-				Debug.Log(" LeftOutput : " + leftOutput + "  RightOutput: " + rightOutput);
+				//Debug.Log(" LeftOutput : " + leftOutput + "  RightOutput: " + rightOutput);
 			}
 		}
 	}
