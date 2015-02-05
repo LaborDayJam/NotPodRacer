@@ -29,7 +29,7 @@ public class RaceController : MonoBehaviour
 	
 	public bool 			canLap = true;
 	public int 				lapsCount = 0;
-	public int  			currentLap = -1;
+	public int  			currentLap = 0;
 	
 	private InputManager 	inputManager;
 	private TimeManager 	timeManager;
@@ -54,7 +54,7 @@ public class RaceController : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
+		StartCollision.OnCrossing 	+= new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 		raceState = RaceState.PRERACE;
 		lastState = raceState;
@@ -63,7 +63,7 @@ public class RaceController : MonoBehaviour
 	
 	void OnDestroy()
 	{
-		StartCollision.OnCrossing -= new StartCollision.CrossingFinishline(UpdateLapCount);
+		StartCollision.OnCrossing 	-= new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway -= new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
 	}
 	
@@ -151,11 +151,7 @@ public class RaceController : MonoBehaviour
 	void TextHandler()
 	{
 		currentLapTimeText.text = timeManager.convertTimeToFormat(timeManager.currentLap);
-		
-		if(timeManager.currentLap > gameLogic.trackBestLaps[gameLogic.trackNum])
-			bestLapTimeText.text = timeManager.convertTimeToFormat(timeManager.currentLap);
-		else
-			bestLapTimeText.text = timeManager.convertTimeToFormat(gameLogic.trackBestLaps[gameLogic.trackNum]);
+		bestLapTimeText.text = timeManager.convertTimeToFormat(gameLogic.trackBestLaps[gameLogic.trackNum]);
 	}
 	
 	IEnumerator EndRace()
@@ -181,8 +177,8 @@ public class RaceController : MonoBehaviour
 		{
 			NextLight();
 			yield return new WaitForSeconds(.95f);
-			
 		}
+		
 		raceState = RaceState.RACING;
 		lightHolder.SetActive(false);
 		timeManager.StartTime ();

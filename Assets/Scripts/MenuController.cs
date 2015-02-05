@@ -138,7 +138,7 @@ public class MenuController : MonoBehaviour
 	public void ExitButton()
 	{
 		MainPanel.SetActive(false);
-		ExitPanel.SetActive(true);
+		Application.Quit();
 	}
 	#endregion
 	

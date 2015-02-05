@@ -51,6 +51,18 @@ public class GameLogic : MonoBehaviour
 		championshipTrackTotals = new float[3];
 	}
 	
+	void OnDestroy()
+	{
+		SaveTime();
+	}
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.LoadLevel(0);
+		}
+		
+	}
 	#region SaveLogic
 	private bool CheckFirstRun()
 	{
@@ -77,9 +89,15 @@ public class GameLogic : MonoBehaviour
 	
 	}	
 	
-	public void SaveTime(string trackName, float time)
+	public void SaveTime()
 	{
-		PlayerPrefs.SetFloat(trackName, time);
+		if(championshipBestTime > PlayerPrefs.GetFloat("ChampionshipTime"))
+		{
+			PlayerPrefs.SetFloat("ChampionshipTime",championshipBestTime);
+		}
+		
+		PlayerPrefsX.SetFloatArray("TrackBestLaps", trackBestLaps);
+		PlayerPrefsX.SetFloatArray("TopTrackTimes", trackBestTimes);
 	}
 	
 	private void SetSaveInfo()

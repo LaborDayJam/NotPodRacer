@@ -16,15 +16,16 @@ public class RaceResultController : MonoBehaviour
 	public Text			lapNumber;
 	public Text			trackTotalTime;
 		
-	public Text [] champBestLaps;
-	public Text [] champTrackTotals;
-	public Text    totalChampTime;
-	public Text    totalBestChampTime;	
+	public Text [] 		champBestLaps;
+	public Text [] 		champTrackTotals;
+	public Text    		totalChampTime;
+	public Text    		totalBestChampTime;	
 
 	private TimeManager timeManager;
 	private GameLogic 	gameLogic;
 	
 	private int 		bestLap =-1;
+	
 	public void Awake()
 	{
 		timeManager = GetComponent<TimeManager>();
@@ -39,6 +40,7 @@ public class RaceResultController : MonoBehaviour
 		SetRaceInformation();
 		SetTrackTime();
 	}
+	
 	void SetChampInfo()
 	{
 	
@@ -48,13 +50,16 @@ public class RaceResultController : MonoBehaviour
 			
 			
 		}
+		
 		if(gameLogic.championshipTotalTime > gameLogic.championshipBestTime)
 		{
 			pbIcons[4].SetActive(true);
 			gameLogic.championshipBestTime = gameLogic.championshipTotalTime;
 		}
+		
 		totalChampTime.text = timeManager.convertTimeToFormat(gameLogic.championshipTotalTime);
 		totalBestChampTime.text = timeManager.convertTimeToFormat(gameLogic.championshipBestTime);
+	
 		for (int i= 0; i < 3; i++)
 		{
 			champBestLaps[i].text = timeManager.convertTimeToFormat(gameLogic.championshipBestLaps[i]);
@@ -64,8 +69,6 @@ public class RaceResultController : MonoBehaviour
 	
 	void SetLapTimes()
 	{
-		
-		
 		for(int i = 0; i < gameLogic.lapTimes.Length; i++)
 		{
 			lapTimeObjects[i].gameObject.SetActive(true);
@@ -74,7 +77,7 @@ public class RaceResultController : MonoBehaviour
 			{
 				
 				lapTimes[i].text = timeManager.convertTimeToFormat(gameLogic.lapTimes[i]);
-
+	
 				if(gameLogic.lapTimes[i] > gameLogic.trackBestLaps[gameLogic.trackNum])
 				{
 				 	gameLogic.trackBestLaps[gameLogic.trackNum] = gameLogic.lapTimes[i]; 
@@ -150,9 +153,17 @@ public class RaceResultController : MonoBehaviour
 	
 	public void OnNext()
 	{
+		gameLogic.lapCount = 3;
+		
 		if(gameLogic.trackNum <= 2)
 		{
 			gameLogic.trackNum++;
+			for(int i = 0; i < 3; i++)
+				gameLogic.lapTimes[i] = 0;
+			
+			gameLogic.totalTrackTime = 0;
+			Application.LoadLevel(6);
+			
 		}
 		else
 		{
@@ -163,15 +174,6 @@ public class RaceResultController : MonoBehaviour
 			SetChampInfo();
 		}
 			
-		for(int i = 0; i < 3; i++)
-			gameLogic.lapTimes[i] = 0;
 		
-		
-		gameLogic.totalTrackTime = 0;
-		Application.LoadLevel(6);
-
 	}
 }
-
-// #Todo: save best lap for each track during champ mode. 
-// #Todo: load best lap for each track during champ mode in camp panel

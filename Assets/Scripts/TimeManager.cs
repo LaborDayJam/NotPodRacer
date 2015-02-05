@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour 
 {
-	private GameLogic gameLogic;
-	
 	public float currentLap = 0f;
 	public float totalRaceTime = 0f;
 	private float bestLapTime = 0;
@@ -16,11 +14,8 @@ public class TimeManager : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		gameLogic = GameLogic.instance;
 		RaceController.OnUpdate += new RaceController.RaceControllerUpdate(UpdateTimer);
 		RaceController.Newlap += new RaceController.RaceControllerUpdate(ResetLapTime);
-		
-		
 	}
 	
 	void OnDestroy()
@@ -61,7 +56,6 @@ public class TimeManager : MonoBehaviour
 
 	IEnumerator CR_TrackTime()
 	{
-		bool noBestLapTime = (bestLapTime == 0) ?  true : false;
 		while (true) 
 		{
 			currentLapTime += Time.deltaTime;
