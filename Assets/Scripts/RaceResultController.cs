@@ -4,23 +4,39 @@ using System.Collections;
 
 public class RaceResultController : MonoBehaviour 
 {
-	
+	public GameObject[] trackpics;
 	public GameObject[] pbIcons;
+	public GameObject[] lapTimeObjects;
+	public GameObject[] buttons;
+	public GameObject   singlePanel;
+	public GameObject   champPanel;
+	
 	public Text[] 		lapTimes;
 	public Text			trackName;
 	public Text			lapNumber;
+	public Text			trackTotalTime;
+	
 
 	private TimeManager timeManager;
 	private GameLogic 	gameLogic;
 	
-	
+	private int 		bestLap =-1;
 	public void Awake()
 	{
 		timeManager = GetComponent<TimeManager>();
 		gameLogic = GameLogic.instance;
-		
-		SetLapTimes();
-		SetRaceInformation();
+		if(gameLogic.singleRace)
+		{
+			SetLapTimes();
+			SetRaceInformation();
+			buttons[1].SetActive(false);
+		}
+		else
+		{
+			SetLapTimes();
+			SetRaceInformation();
+			buttons[0].SetActive(false);
+		}
 	}
 	
 	void SetLapTimes()
@@ -34,12 +50,22 @@ public class RaceResultController : MonoBehaviour
 			{
 				
 				lapTimes[i].text = timeManager.convertTimeToFormat(gameLogic.lapTimes[i]);
-				gameLogic.lapTimes[i] = 0;
+
+				if(gameLogic.lapTimes[i] > gameLogic.trackBestLaps[gameLogic.trackNum])
+				{
+				 	gameLogic.trackBestLaps[gameLogic.trackNum] = gameLogic.lapTimes[i]; 
+				 	bestLap = i;
+				}
+				
 			}
 			else
 				lapTimes[i].gameObject.SetActive(false);
 		}
+		
+		if(bestLap >= 0)
+			pbIcons[bestLap].SetActive(true);
 	}
+	
 	
 	void SetRaceInformation()
 	{
@@ -60,13 +86,63 @@ public class RaceResultController : MonoBehaviour
 		lapNumber.text = gameLogic.lapCount.ToString();
 	}
 	
+	void SetTrackTime()
+	{
+		if(gameLogic.totalTracTime > gameLogic.topTrackTimes[gameLogic.trackNum])
+		{
+			gameLogic.topTrackTimes[gameLogic.trackNum] = gameLogic.totalTracTime;
+			pbIcons[3].SetActive(true);
+		}
+		
+		if(!gameLogic.singleRace)
+			gameLogic.championshipTotals[gameLogic.trackNum] = gameLogic.totalTracTime;
+			
+		trackTotalTime.text = timeManager.convertTimeToFormat(gameLogic.totalTracTime);
+	}
 	public void OnReset()
 	{
+		for(int i = 0; i < 3; i++)
+			gameLogic.lapTimes[i] = 0;
+		
+		gameLogic.totalTracTime = 0;	
+		Application.LoadLevel(gameLogic.trackNum + 1);
 		
 	}
 	
 	public void OnDone()
 	{
+		for(int i = 0; i < 3; i++)
+			gameLogic.lapTimes[i] = 0;
+		
+		gameLogic.totalTracTime = 0;
+		
+		Application.LoadLevel(0);
+	}
 	
+	public void OnNext()
+	{
+		if(gameLogic.trackNum <= 2)
+		{
+			gameLogic.trackNum++;
+		}
+		else
+		{
+			buttons[1].SetActive(false);
+			buttons[0].SetActive(true);
+			singlePanel.SetActive(false);
+			champPanel.SetActive(true);
+			
+		}
+			
+		for(int i = 0; i < 3; i++)
+			gameLogic.lapTimes[i] = 0;
+		
+		
+		gameLogic.totalTracTime = 0;
+		Application.LoadLevel(6);
+
 	}
 }
+
+// #Todo: save best lap for each track during champ mode. 
+// #Todo: load best lap for each track during champ mode in camp panel

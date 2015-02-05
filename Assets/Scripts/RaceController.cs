@@ -16,29 +16,29 @@ public class RaceController : MonoBehaviour
 
 	public static RaceState raceState;
 
-	public Text timerText;
-	public Text	bestText;
-	
+
 	public delegate void RaceControllerUpdate();
 	public static event RaceControllerUpdate OnUpdate;
 	public static event RaceControllerUpdate Newlap;
 	
-	public GameObject [] lights;
-	public GameObject    lightHolder;
-
-	public GameObject rsInputObject;
-	private InputManager inputManager;
-	private GameLogic gameLogic;
-	public bool canLap = true;
-	public int 	lapsCount = 0;
-	public int  currentLap = -1;
+	public GameObject [] 	lights;
+	public GameObject    	lightHolder;
+	public GameObject 		rsInputObject;
+	public Text 			currentLapTimeText;
+	public Text 			bestLapTimeText;
 	
-	private RaceState lastState;
-	private bool raceStart = false;
-	private int lightIndex = 0;
+	public bool 			canLap = true;
+	public int 				lapsCount = 0;
+	public int  			currentLap = -1;
+	
+	private InputManager 	inputManager;
+	private TimeManager 	timeManager;
+	private GameLogic 		gameLogic;
+	private RaceState 		lastState;
+	private bool 			raceStart = false;
+	private int 			lightIndex = 0;
 
-	TimeManager timeManager;
-
+	
 	public static int GetState
 	{
 		get{return (int)raceState;}
@@ -54,19 +54,31 @@ public class RaceController : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		raceState = RaceState.PRERACE;
-		lastState = raceState;
 		StartCollision.OnCrossing += new StartCollision.CrossingFinishline(UpdateLapCount);
 		MidpointCollision.OnHalfway += new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
-		gameLogic = GameLogic.instance;
-		lapsCount = gameLogic.lapCount;
-		inputManager = InputManager.Instance;
-		timeManager = GetComponent<TimeManager> ();		
+		raceState = RaceState.PRERACE;
+		lastState = raceState;
+		
 	}
 	
+	void OnDestroy()
+	{
+		StartCollision.OnCrossing -= new StartCollision.CrossingFinishline(UpdateLapCount);
+		MidpointCollision.OnHalfway -= new MidpointCollision.CrossingMidpoint(UpdateLapStatus);
+	}
+	
+	void Start()
+	{
+		inputManager = InputManager.Instance;
+		gameLogic = GameLogic.instance;
+		lapsCount = gameLogic.lapCount;
+		timeManager = GetComponent<TimeManager> ();		
+	}
 	// Update is called once per frame
 	void Update () 
 	{
+		
+		
 		if(OnUpdate != null)
 		{
 			OnUpdate();
@@ -74,7 +86,9 @@ public class RaceController : MonoBehaviour
 		
 		if(raceState == RaceState.PRERACE && (inputManager.leftOutputNormalized != 0 || inputManager.rightOutputNormalized != 0))
 			raceState = RaceState.COUNTDOWN;
-	
+		else if(raceState == RaceState.RACING)
+			TextHandler();
+			
 		if(lastState != raceState)
 		{
 			SwitchState();
@@ -86,21 +100,19 @@ public class RaceController : MonoBehaviour
 	{
 		currentLap++;
 		
-		if(currentLap > 0)
+		if(currentLap == 1)
 		{
-			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime;
-			gameLogic.totalTracTime = timeManager.currentLapTime;
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
+			
 		}
 		else if(currentLap == 2)
 		{
-			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime - gameLogic.lapTimes[currentLap -2];
-			gameLogic.totalTracTime = timeManager.currentLapTime;
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
 		}
 		
 		else if(currentLap == 3)
 		{
-			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLapTime - gameLogic.lapTimes[currentLap -3];
-			gameLogic.totalTracTime = timeManager.currentLapTime;
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
 		}
 		
 		if(currentLap < lapsCount && canLap)
@@ -132,17 +144,31 @@ public class RaceController : MonoBehaviour
 				StartCoroutine("StartRace");
 				break;
 			}
-			
+	
 		}
 	}
+	
+	void TextHandler()
+	{
+		currentLapTimeText.text = timeManager.convertTimeToFormat(timeManager.currentLap);
+		
+		if(timeManager.currentLap > gameLogic.trackBestLaps[gameLogic.trackNum])
+			bestLapTimeText.text = timeManager.convertTimeToFormat(timeManager.currentLap);
+		else
+			bestLapTimeText.text = timeManager.convertTimeToFormat(gameLogic.trackBestLaps[gameLogic.trackNum]);
+	}
+	
 	IEnumerator EndRace()
 	{
+		
+		gameLogic.totalTracTime = timeManager.totalRaceTime;
 		timeManager.StopTime();
 		gameLogic.gameStarted = false;
-		yield return new WaitForSeconds(5);
-		
+		yield return new WaitForSeconds(3);
 		Application.LoadLevel(5);
+		
 	}
+	
 	IEnumerator StartRace()
 	{
 		if(!raceStart)

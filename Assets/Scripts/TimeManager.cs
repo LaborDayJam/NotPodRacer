@@ -7,11 +7,8 @@ public class TimeManager : MonoBehaviour
 	private GameLogic gameLogic;
 	
 	public float currentLap = 0f;
-	private float totalRaceTime = 0f;
+	public float totalRaceTime = 0f;
 	private float bestLapTime = 0;
-
-	public Text currentLapTimeText;
-	public Text bestLapTimeText;
 
 	public float currentLapTime;
 	public float saveTime = 0f;
@@ -21,9 +18,9 @@ public class TimeManager : MonoBehaviour
 	{
 		gameLogic = GameLogic.instance;
 		RaceController.OnUpdate += new RaceController.RaceControllerUpdate(UpdateTimer);
-		RaceController.Newlap += new RaceController.RaceControllerUpdate(ResetLapTime);	
-		bestLapTime = gameLogic.trackBestLaps[gameLogic.trackNum];
-		bestLapTimeText.text = convertTimeToFormat (bestLapTime);
+		RaceController.Newlap += new RaceController.RaceControllerUpdate(ResetLapTime);
+		
+		
 	}
 	
 	void OnDestroy()
@@ -60,10 +57,6 @@ public class TimeManager : MonoBehaviour
 	public void StopTime()
 	{
 		StopCoroutine ("CR_TrackTime");
-		if (currentLapTime < bestLapTime || bestLapTime == 0) 
-		{
-			bestLapTimeText.text = currentLapTimeText.text;
-		}
 	}
 
 	IEnumerator CR_TrackTime()
@@ -72,13 +65,6 @@ public class TimeManager : MonoBehaviour
 		while (true) 
 		{
 			currentLapTime += Time.deltaTime;
-			currentLapTimeText.text = convertTimeToFormat(currentLapTime);
-
-			if(noBestLapTime)
-			{
-				bestLapTimeText.text = currentLapTimeText.text;
-				gameLogic.trackBestLaps[gameLogic.trackNum] = currentLapTime;
-			}
 			yield return 0;
 		}
 	}

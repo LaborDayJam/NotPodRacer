@@ -84,7 +84,7 @@ public class Ship : MonoBehaviour {
 		while (true) {
 			x = 0; y = 0; z = 0;
 			foreach (Transform tf in clampPoints) {
-				if(Physics.Raycast(transform.position, Vector3.down, out hit, 20))
+				if(Physics.Raycast(transform.position, Vector3.down, out hit, 1))
 				{
 					Debug.Log("Hit " + hit.transform.name + "  " + hit.normal);
 					x += hit.normal.x;
