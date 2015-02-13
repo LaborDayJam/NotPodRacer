@@ -29,7 +29,7 @@ public class GameLogic : MonoBehaviour
 	void Awake()
 	{
 		DontDestroyOnLoad(gameObject);
-		
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		if (instance == null)
 			instance = this;
 		else 
