@@ -26,7 +26,7 @@ public class Ship : MonoBehaviour {
 	//Clamp
 	public Transform[] clampPoints;
 	public float clampIntervalSeconds = .5f;
-	bool isGroundClampEnabled = true;
+	bool isGroundClampEnabled = false;
 
 
 
