@@ -61,6 +61,10 @@ public class GameLogic : MonoBehaviour
 		{
 			Application.LoadLevel(0);
 		}
+		else if (Input.GetKeyDown(KeyCode.R))
+		{
+			PlayerPrefs.DeleteAll();
+		}
 		
 	}
 	#region SaveLogic

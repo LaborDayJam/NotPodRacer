@@ -77,8 +77,6 @@ public class RaceController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
-		
 		if(OnUpdate != null)
 		{
 			OnUpdate();
@@ -102,23 +100,25 @@ public class RaceController : MonoBehaviour
 		
 		if(currentLap == 1)
 		{
-			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
 			
+			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
+			CheckBestTime();
 		}
 		else if(currentLap == 2)
 		{
 			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
+			CheckBestTime();
 		}
-		
 		else if(currentLap == 3)
 		{
 			gameLogic.lapTimes[currentLap - 1] = timeManager.currentLap;
-		}
+			CheckBestTime();
+		}	
 		
 		if(currentLap < lapsCount && canLap)
 		{
 			canLap = false;
-						
+											
 			if(Newlap != null)
 				Newlap();
 		}
@@ -129,7 +129,13 @@ public class RaceController : MonoBehaviour
 			
 		}
 	}
-
+	
+	void CheckBestTime()
+	{
+		if(gameLogic.trackBestLaps[gameLogic.trackNum] < gameLogic.lapTimes[currentLap - 1])
+			gameLogic.trackBestLaps[gameLogic.trackNum] = gameLogic.lapTimes[currentLap - 1];	
+	}
+	
 	void UpdateLapStatus()
 	{
 		canLap = true;

@@ -170,7 +170,6 @@ public class ShipPhysics : MonoBehaviour
 				yield return new WaitForSeconds (clampIntervalSeconds);
 				
 			averageHitPoint /= hitCount;
-			//Debug.Log("Avg hit point" + averageHitPoint + "!" + " x:" + x + " y:" + y + " z:" + z + " Hitcount:" + hitCount);
 			x /= hitCount;
 			y /= hitCount;
 			z /= hitCount;
@@ -178,8 +177,11 @@ public class ShipPhysics : MonoBehaviour
 			float collisionHeight = averageHitPoint.y;
 			//TODO orient myself to the average ground normal. Smooth transition
 			//transform.up = new Vector3 (x, y, z);
+			if(float.IsNegativeInfinity(collisionHeight))
+				collisionHeight = transform.position.y;
+			
 			targetHeightPosition = new Vector3(transform.position.x, collisionHeight, transform.position.z) + transform.up * 5;
-			Debug.Log(targetHeightPosition);
+	
 			yield return new WaitForSeconds (clampIntervalSeconds);
 		}
 	}
@@ -188,7 +190,7 @@ public class ShipPhysics : MonoBehaviour
 	{
 		while (true) 
 		{
-			if( !targetHeightPosition.Equals(Vector3.zero))
+			if( !targetHeightPosition.Equals(Vector3.zero) )
 			{
 			   transform.position = Vector3.Slerp(transform.position, targetHeightPosition, Time.deltaTime);
 				if(  Mathf.Abs(targetHeightPosition.y - transform.position.y) < .2f)
